@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Nesting Demo</title>
+	<meta name="description" content="Blueprint Grid Nesting demo." />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="source/icons/bpg48.png" type="image/x-icon" />
+	<link rel="icon" href="source/icons/bpg.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="source/icons/bpg100.png" />
+	
+	<!-- CORE CSS  -->
+	<link href="source/brutalist.min.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="source/blueprintgrid.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+		.block-wrap .block { border: 2px solid #333; padding: 1.25em; background: #e6e6e6; }
+		.brick-wrap .brick { border: 2px solid #3B0B0B; background: #610B0B;}
+		.tiles li { border: 2px solid #6e6e6e; outline: 3px solid #e6e6e6; background: #efefef; padding: 0.5em;}
+	</style>
+</head>
+<body class="infinitile">
+<div class="brick-wrap b100 bh25 center">
+	<h1 class="brick b50 courier blueprint box-s bold"><i class="bi bi-box"></i><br />Nesting Demo</h1>
+</div>
+
+<div class="pane full halves">
+	<div class="block river">
+		<div class="brick-wrap h100 center">
+			<div class="brick bw60 bold white-t lucida"><span class="flow-text">Centered Brick</span><br />This 60%-width brick is centered within a 100% height brick-wrapper, which is contained within a full-height half pane.</div>
+		</div>
+	</div>
+	<div class="block violence">
+		<h3 class="lucida padded bold pink-t mauve-t-s" style="margin-bottom: 0;">Tiled Pane</h3>
+		<p class="arial padded white-t bold flow-text">This half pane contains a nested three-column tile layout.</p>
+		<ul class="tiles thirds padded flow-text bold charcoal-t grey-t-s lucida">
+			<li>Tile 1</li>
+			<li>Tile 2</li>
+			<li>Tile 3</li>
+			<li>Tile 4</li>
+			<li>Tile 5</li>
+			<li>Tile 6</li>
+			<li>Tile 7</li>
+			<li>Tile 8</li>
+		</ul>
+	</div>
+</div>
+<p class="spacer"></p>
+
+<p class="flow-text lucida blueprint">Bricks and Tiles within 2-column CSS grid wrapped within standard container</p>
+<div class="container">
+	<div class="grid col-2 flow-text times bold">
+		<div class="brick-wrap thirds">
+			<div class="brick">Brick 1</div>
+			<div class="brick">Brick 2</div>
+			<div class="brick">Brick 3</div>
+			<div class="brick">Brick 4</div>
+		</div>
+		<ul class="tiles halves" style="margin: 3px;">
+			<li class="bh20">Tile 1</li>
+			<li>Tile 2</li>
+			<li>Tile 3</li>
+			<li>Tile 4</li>
+		</ul>
+	</div>
+</div>
+<p class="spacer"></p>
+
+<p class="flow-text lucida blueprint">Three-column CSS grid within a two-column block layout</p>
+<div class="block-wrap halves stretch">
+	<div class="block river padded">
+		<p class="flow-text center charcoal-t-s navy-t center">BLOCK 1</p>
+		<div class="grid col-3 gap flow-text charcoal-t courier bold">
+			<div class="river padded"><p>Column 1<br /><img src="source/emprint_blue.jpg" class="responsive b75 box-s-t" alt="Emily Blue" /></p></div>
+			<div><p>Column 2<br />Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p></div>
+			<div><p>Column 3<br /><img src="source/emprint_charcoal.jpg" class="responsive" alt="Emily Charcoal" /></p></div>
+		</div>
+	</div>
+	<div class="block river padded">
+		<p class="flow-text center navy-t charcoal-t-s center">BLOCK 2</p>
+		<div class="grid col-3 gap flow-text">
+			<div><p class="charcoal-t courier bold">Column 1<br /><img src="source/emprint_blue.jpg" class="responsive" alt="Emily Blue" /></p></div>
+			<div><p class="charcoal-t courier bold">Column 2<br />Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p></div>
+			<div class="river padded"><p class="charcoal-t courier bold">Column 3<br /><img src="source/emprint_charcoal.jpg" class="responsive bw75 box-s-t" alt="Emily Charcoal" /></p></div>
+		</div>
+	</div>
+</div>
+<p class="spacer"></p>
+
+<p class="flow-text lucida blueprint">Blocks and tiles within blocks within a 1200px container</p>
+<div class="container-1200">
+	<div class="block-wrap">
+		<div class="block bw70">
+			<h4 class="courier bold white-t navy-t-s river">70% Width Block</h4>
+			<div class="row">
+				<div class="block bw60">
+					<h5 class="charcoal-t courier">60% Width Block</h5>
+				</div>
+				<div class="block bw40">
+					<h5 class="charcoal-t courier">40% Width Block</h5>
+				</div>
+				<div class="block bw40">
+					<h5 class="charcoal-t courier">40% Width Block</h5>
+				</div>
+				<div class="block bw60">
+					<h5 class="charcoal-t courier">60% Width Block</h5>
+				</div>
+			</div>
+			<h4 class="courier bold white-t navy-t-s river">A Break Between Block Rows</h4>
+			<div class="row">
+				<div class="block bw50">
+					<h5 class="charcoal-t courier">50% Width Block</h5>
+				</div>
+				<div class="block bw50">
+					<h5 class="charcoal-t courier">50% Width Block</h5>
+				</div>
+				<div class="block bw40">
+					<h5 class="charcoal-t courier">40% Width Block</h5>
+				</div>
+				<div class="block bw60">
+					<h5 class="charcoal-t courier">60% Width Block</h5>
+				</div>
+			</div>
+		</div>
+		<div class="block bw30">
+			<h4 class="courier bold white-t navy-t-s river">30% Width Block</h4>
+			<p>Here's some tiles:</p>
+			<ul class="tiles halves padded bold flow-text">
+				<li>Tile 1</li>
+				<li>Tile 2</li>
+				<li>Tile 3</li>
+				<li>Tile 4</li>
+				<li>Tile 5</li>
+				<li>Tile 6</li>
+				<li>Tile 7</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<p class="spacer"></p>
+</body>
+</html>

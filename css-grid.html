@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>CSS Grid Demo</title>
+	<meta name="description" content="Blueprint CSS Grid demo." />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="source/icons/bpg48.png" type="image/x-icon" />
+	<link rel="icon" href="source/icons/bpg.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="source/icons/bpg100.png" />
+	
+	<!-- CORE CSS  -->
+	<link href="source/brutalist.min.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="source/blueprintgrid.css" type="text/css" rel="stylesheet" media="all"/>
+</head>
+<body class="infinitile">
+<div class="brick-wrap b100 bh33 center">
+	<div class="brick b50 blueprint box-s">
+		<h1 class="courier bold"><i class="bi bi-grid"></i><br />CSS Grid Demo</h1>
+	</div>
+</div>
+<!-- Single-column grid -->
+<div class="grid col-1 rh-full white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
+	<div class="river padded center">
+		<h3>Single Column</h3>
+		<p class="flow-text">This 1-column grid row is full-height: <b>.rh-full</b></p>
+	</div>
+</div>
+<!-- 2-column grid -->
+<div class="grid col-2 rh-half tahoma white-t navy-t-s" style="border-top: 2px solid #0080fe;">
+	<div class="river padded center">
+		<h3>Column 1</h3>
+		<p class="flow-text">This 2-column grid row is half-height: <b>.rh-half</b></p>
+	</div>
+	<div class="river padded center">
+		<h3>Column 2</h3>
+		<p class="flow-text">&nbsp;</p>
+	</div>
+</div>
+<!-- 3-column grid -->
+<div class="grid col-3 rh-one-third white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
+	<div class="river padded center"><h3 class="flow-text">Column 1</h3><p><b>.rh-one-third</b></p></div>
+	<div class="river padded center h100"><h3 class="flow-text">Column 2</h3><p><strong>TIP:</strong> apply a height class to the child element to make it vertically occupy more space (ex. <em>.h100</em>).</p></div>
+	<div class="river padded center"><h3 class="flow-text">Column 3</h3><p>&nbsp;</p></div>
+</div>
+<!-- 4-column grid -->
+<div class="grid col-4 rh-one-fourth white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
+	<div class="river padded center"><h3 class="flow-text">Column 1</h3><p><b>.rh-one-fourth</b></p></div>
+	<div class="river padded center"><h3 class="flow-text">Column 2</h3><p>&nbsp;</p></div>
+	<div class="river padded center"><h3 class="flow-text">Column 3</h3><p>&nbsp;</p></div>
+	<div class="river padded center"><h3 class="flow-text">Column 4</h3><p>&nbsp;</p></div>
+</div>
+<!-- 5-column grid -->
+<div class="grid col-5 rh-one-fifth white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
+	<div class="river padded center"><h3 class="flow-text">Column 1</h3><p><b>.rh-one-fifth</b></p></div>
+	<div class="river padded center"><h3 class="flow-text">Column 2</h3><p>&nbsp;</p></div>
+	<div class="river padded center"><h3 class="flow-text">Column 3</h3><p>&nbsp;</p></div>
+	<div class="river padded center"><h3 class="flow-text">Column 4</h3><p>&nbsp;</p></div>
+	<div class="river padded center"><h3 class="flow-text">Column 5</h3><p>&nbsp;</p></div>
+</div>
+<!-- 6-column Grid -->
+<div class="grid col-6 white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
+	<div class="river padded center"><h3 class="flow-text">Column 1</h3></div>
+	<div class="river padded center"><h3 class="flow-text">Column 2</h3></div>
+	<div class="river padded center"><h3 class="flow-text">Column 3</h3></div>
+	<div class="river padded center"><h3 class="flow-text">Column 4</h3></div>
+	<div class="river padded center"><h3 class="flow-text">Column 5</h3></div>
+	<div class="river padded center"><h3 class="flow-text">Column 6</h3></div>
+</div>
+
+<!-- Grid Gaps -->
+<div class="brick-wrap b100 bh25 center padded">
+	<div class="brick b50 blueprint box-s">
+		<h3 class="courier bold"><i class="bi bi-left"></i> Grid Gaps <i class="bi bi-right"></i></h3>
+		<p class="flow-text">Apply <b>.gap</b> class to grid wrapper.</p>
+	</div>
+</div>
+<div class="grid col-4 gap white-t navy-t-s tahoma">
+	<div class="river padded center"><h3>Box 1</h3></div>
+	<div class="river padded center"><h3>Box 2</h3></div>
+	<div class="river padded center"><h3>Box 3</h3></div>
+	<div class="river padded center"><h3>Box 4</h3></div>
+</div>
+
+<!-- Column Start Positioning -->
+<div class="brick-wrap b100 bh25 center padded">
+	<div class="brick b50 blueprint box-s">
+		<h3 class="courier bold">Column Start Position</h3>
+		<p class="flow-text">Apply <b>.c-start-<em>X</em></b> to a child element, where <em>X</em> can be 1 - 6.</p>
+	</div>
+</div>
+<div class="grid col-4 gap white-t navy-t-s tahoma">
+	<div class="c-start-2 river padded center"><h3>Box 1</h3><p>This box starts in the 2nd column.</p></div>
+	<div class="river padded center"><h3>Box 2</h3></div>
+	<div class="river padded center"><h3>Box 3</h3></div>
+	<div class="river padded center"><h3>Box 4</h3></div>
+	<div class="river padded center"><h3>Box 5</h3></div>
+	<div class="river padded center"><h3>Box 6</h3></div>
+</div>
+
+<!-- Row Start Positioning -->
+<div class="brick-wrap b100 bh25 center padded">
+	<div class="brick b50 blueprint box-s">
+		<h3 class="courier bold">Row Start Position</h3>
+		<p class="flow-text">Apply <b>.r-start-<em>X</em></b> to a child element, where <em>X</em> can be 1 - 6.</p>
+	</div>
+</div>
+<div class="grid col-4 gap white-t navy-t-s tahoma">
+	<div class="r-start-2 river padded center"><h3>Box 1</h3><p>This box starts on the 2nd row.</p></div>
+	<div class="river padded center"><h3>Box 2</h3></div>
+	<div class="river padded center"><h3>Box 3</h3></div>
+	<div class="river padded center"><h3>Box 4</h3></div>
+	<div class="river padded center"><h3>Box 5</h3></div>
+	<div class="river padded center"><h3>Box 6</h3></div>
+</div>
+
+<!-- Column Span -->
+<div class="brick-wrap b100 bh25 center padded">
+	<div class="brick b50 blueprint box-s">
+		<h3 class="courier bold">Column Span</h3>
+		<p class="flow-text">Apply <b>.c-span-<em>X</em></b> to a child element, where <em>X</em> can be 1 - 6.</p>
+	</div>
+</div>
+<div class="grid col-4 gap white-t navy-t-s tahoma">
+	<div class="c-span-3 river padded center"><h3>Box 1</h3><p>This box spans 3 columns.</p></div>
+	<div class="river padded center"><h3>Box 2</h3></div>
+	<div class="river padded center"><h3>Box 3</h3></div>
+	<div class="river padded center"><h3>Box 4</h3></div>
+	<div class="river padded center"><h3>Box 5</h3></div>
+	<div class="river padded center"><h3>Box 6</h3></div>
+</div>
+
+<!-- Row Span -->
+<div class="brick-wrap b100 bh25 center padded">
+	<div class="brick b50 blueprint box-s">
+		<h3 class="courier bold">Row Span</h3>
+		<p class="flow-text">Apply <b>.r-span-<em>X</em></b> to a child element, where <em>X</em> can be 1 - 6.</p>
+	</div>
+</div>
+<div class="grid col-4 gap white-t navy-t-s tahoma">
+	<div class="r-span-2 river padded center h100"><h3>Box 1</h3><p>This box spans 2 rows.</p></div>
+	<div class="river padded center"><h3>Box 2</h3></div>
+	<div class="river padded center"><h3>Box 3</h3></div>
+	<div class="river padded center"><h3>Box 4</h3></div>
+	<div class="river padded center"><h3>Box 5</h3></div>
+	<div class="river padded center"><h3>Box 6</h3></div>
+</div>
+
+</body>
+</html>

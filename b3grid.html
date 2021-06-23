@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>B3Grid Demo</title>
+	<meta name="description" content="Blueprint Grid B3Grid demo." />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="source/icons/bpg48.png" type="image/x-icon" />
+	<link rel="icon" href="source/icons/bpg.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="source/icons/bpg100.png" />
+	
+	<!-- CORE CSS  -->
+	<link href="source/brutalist.min.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="source/blueprintgrid.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+		.block-wrap .block { border: 2px solid #333; padding: 1.25em; background: #e6e6e6; }
+		.brick-wrap .brick { border: 2px solid #3B0B0B; background: #610B0B;}
+		.tiles li { border: 2px solid #6e6e6e; outline: 3px solid #e6e6e6; background: #efefef; padding: 0.5em;}
+	</style>
+</head>
+<body class="infinitile">
+<div class="brick-wrap b100 bh25 center">
+	<h1 class="brick b50 courier blueprint box-s bold"><i class="bi bi-grid"></i><br />B3Grid Demo</h1>
+</div>
+
+<!-- Base Widths -->
+<h2 class="lucida heavy blueprint navy-t-s" id="bw">Base Widths</h2>
+<div class="block-wrap flow-text charcoal-t lucida center bold">
+	<div class="block bw100">.bw100</div>
+	<div class="block bw95">.bw95</div>
+	<div class="block bw5" style="padding-left: 0; padding-right: 0;">.bw5</div>
+	<div class="block bw90">.bw90</div>
+	<div class="block bw10">.bw10</div>
+	<div class="block bw85">.bw85</div>
+	<div class="block bw15">.bw15</div>
+	<div class="block bw80">.bw80</div>
+	<div class="block bw20">.bw20</div>
+	<div class="block bw75">.bw75</div>
+	<div class="block bw25">.bw25</div>
+	<div class="block bw70">.bw70</div>
+	<div class="block bw30">.bw30</div>
+	<div class="block bw65">.bw65</div>
+	<div class="block bw35">.bw35</div>
+	<div class="block bw60">.bw60</div>
+	<div class="block bw40">.bw40</div>
+	<div class="block bw55">.bw55</div>
+	<div class="block bw45">.bw45</div>
+	<div class="block bw50">.bw50</div>
+	<div class="block bw50">.bw50</div>
+	<div class="block bw34">.bw33 / .bw34<br /><span class="smaller">.bw-one-third</span></div>
+	<div class="block bw66">.bw66 / .bw67<br /><span class="smaller">.bw-two-thirds</span></div>
+</div>
+<p class="spacer"></p>
+
+<!-- Viewport Base Heights -->
+<h2 class="lucida heavy blueprint navy-t-s" id="bh">Base Heights</h2>
+<div class="block-wrap flow-text charcoal-t lucida center bold">
+	<div class="block bh20">.bh20</div>
+	<div class="block bh25">.bh25</div>
+	<div class="block bh33">.bh33 / .bh34<br /><span class="smaller">.bh-one-third</span></div>
+	<div class="block bh50">.bh50</div>
+	<div class="block bh67">.bh66 / .bh67<br /><span class="smaller">.bh-two-thirds</span></div>
+	<div class="block bh75">.bh75</div>
+	<div class="block bh100">.bh100</div>
+</div>
+<p class="spacer"></p>
+
+<!-- Block Growth -->
+<h2 class="lucida heavy blueprint navy-t-s" id="growths">Block Growth</h2>
+<div class="block-wrap flow-text charcoal-t lucida center bold">
+	<div class="block g0">.g0</div>
+	<div class="block"></div>
+	<div class="block"></div>
+	<div class="block"></div>
+</div>
+<div class="block-wrap flow-text charcoal-t lucida center bold">
+	<div class="block g1">.g1</div>
+	<div class="block"></div>
+	<div class="block"></div>
+	<div class="block"></div>
+</div>
+<div class="block-wrap flow-text charcoal-t lucida center bold">
+	<div class="block g2">.g2</div>
+	<div class="block"></div>
+	<div class="block"></div>
+	<div class="block"></div>
+</div>
+<div class="block-wrap flow-text charcoal-t lucida center bold">
+	<div class="block g3">.g3</div>
+	<div class="block"></div>
+	<div class="block"></div>
+	<div class="block"></div>
+</div>
+<div class="block-wrap flow-text charcoal-t lucida center bold">
+	<div class="block g4">.g4</div>
+	<div class="block"></div>
+	<div class="block"></div>
+	<div class="block"></div>
+</div>
+<div class="block-wrap flow-text charcoal-t lucida center bold">
+	<div class="block g5">.g5</div>
+	<div class="block"></div>
+	<div class="block"></div>
+	<div class="block"></div>
+</div>
+<div class="block-wrap flow-text charcoal-t lucida center bold">
+	<div class="block g6">.g6</div>
+	<div class="block"></div>
+	<div class="block"></div>
+	<div class="block"></div>
+</div>
+<p class="spacer"></p>
+
+<!-- Quick Widths -->
+<h2 class="lucida heavy blueprint navy-t-s" id="quickies">Quick Widths</h2>
+<p class="courier bold flow-text bold river">.full</p>
+<div class="block-wrap full flow-text charcoal-t lucida center bold">
+	<div class="block">.block</div>
+</div>
+<p class="courier bold flow-text bold river">.halves</p>
+<div class="block-wrap halves flow-text charcoal-t lucida center bold">
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+</div>
+<p class="courier bold flow-text bold river">.thirds</p>
+<div class="block-wrap thirds flow-text charcoal-t lucida center bold">
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+</div>
+<p class="courier bold flow-text bold river">.quarters</p>
+<div class="block-wrap quarters flow-text charcoal-t lucida center bold">
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+</div>
+<p class="courier bold flow-text bold river">.fifths</p>
+<div class="block-wrap fifths flow-text charcoal-t lucida center bold">
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+</div>
+<p class="courier bold flow-text bold river">.sixths</p>
+<div class="block-wrap sixths flow-text charcoal-t lucida center bold">
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+	<div class="block">.block</div>
+</div>
+<p class="spacer"></p>
+
+<!-- BRICKS -->
+<h2 class="lucida heavy blueprint navy-t-s" id="bricks">Bricks</h2>
+<p class="courier bold flow-text bold">Default bricks with specified width on one brick.</p>
+<div class="brick-wrap white-t lucida flow-text">
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+	<div class="brick bw25">.brick.bw25</div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+</div>
+<p>&nbsp;</p>
+<p class="courier bold flow-text bold">Same as above with <em>.fifths</em> quick-width applied.</p>
+<div class="brick-wrap fifths white-t lucida flow-text">
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+	<div class="brick bw25">.brick.bw25</div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+</div>
+<p class="spacer"></p>
+
+<!-- TILES -->
+<h2 class="lucida heavy blueprint navy-t-s" id="tiles">Tiles</h2>
+<p class="courier bold flow-text bold">.tiles.padded</p>
+<ul class="tiles padded flow-text bold charcoal-t grey-t-s lucida">
+	<li>Tile 1</li>
+	<li>Tile 2</li>
+	<li>Tile 3</li>
+	<li>Tile 4</li>
+	<li>Tile 5</li>
+	<li>Tile 6</li>
+</ul>
+<p>&nbsp;</p>
+<p class="courier bold flow-text bold">.tiles.quarters</p>
+<ul class="tiles quarters flow-text bold charcoal-t grey-t-s lucida">
+	<li>Tile 1</li>
+	<li>Tile 2</li>
+	<li>Tile 3</li>
+	<li><a href="#" class="blue-h">Tile 4 <small>(LINKED)</small></a></li>
+	<li>Tile 5</li>
+	<li><a href="#" class="blue-h">Tile 6 <small>(LINKED)</small></a></li>
+</ul>
+<p class="spacer"></p>
+
+<!-- Spacing -->
+<h2 class="lucida heavy blueprint navy-t-s" id="spacing">Spacing</h2>
+<p class="courier bold flow-text bold river">.around</p>
+<div class="brick-wrap around white-t lucida flow-text">
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+</div>
+<p class="courier bold flow-text bold river">.between</p>
+<div class="brick-wrap between white-t lucida flow-text">
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+</div>
+<p class="courier bold flow-text bold river">.evenly</p>
+<div class="brick-wrap evenly white-t lucida flow-text">
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+</div>
+<p class="spacer"></p>
+
+<!-- Alignment -->
+<h2 class="lucida heavy blueprint navy-t-s" id="align">Alignment</h2>
+<p class="courier bold flow-text bold river">.center / .middle</p>
+<div class="brick-wrap b100 bh25 center sand white-t lucida flow-text">
+	<div class="brick">.center .brick</div>
+</div>
+<p class="courier bold flow-text bold river">.start / .top</p>
+<div class="brick-wrap b100 bh25 start sand white-t lucida flow-text">
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+</div>
+<p class="courier bold flow-text bold river">.end / .bottom</p>
+<div class="brick-wrap b100 bh25 end sand white-t lucida flow-text">
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick</div>
+</div>
+<p class="courier bold flow-text bold river">.baseline</p>
+<div class="brick-wrap b100 bh25 center sand white-t lucida flow-text">
+	<div class="brick">.brick<br /><small>line 2<br />line 3</small></div>
+	<div class="brick baseline">.brick.baseline</div>
+	<div class="brick">.brick<br /><small>line 2<br />line 3</small></div>
+</div>
+<p class="courier bold flow-text bold river">.stretch</p>
+<div class="brick-wrap b100 bh25 center stretch sand white-t lucida flow-text">
+	<div class="brick">.brick<br /><small>line 2<br />line 3</small></div>
+	<div class="brick">.brick</div>
+	<div class="brick">.brick<br /><small>line 2<br />line 3</small></div>
+</div>
+<p class="spacer"></p>
+
+<!-- Direction and Ordering -->
+<h2 class="lucida heavy blueprint navy-t-s" id="direction">Direction &amp; Ordering</h2>
+<p class="courier bold flow-text bold river">.row-rev</p>
+<div class="brick-wrap row-rev white-t lucida flow-text">
+	<div class="brick">brick 1</div>
+	<div class="brick">brick 2</div>
+	<div class="brick">brick 3</div>
+	<div class="brick">brick 4</div>
+	<div class="brick">brick 5</div>
+</div>
+<p class="courier bold flow-text bold river">.col</p>
+<div class="brick-wrap col white-t lucida flow-text">
+	<div class="brick">brick 1</div>
+	<div class="brick">brick 2</div>
+	<div class="brick">brick 3</div>
+	<div class="brick">brick 4</div>
+	<div class="brick">brick 5</div>
+</div>
+<p class="courier bold flow-text bold river">.col-rev</p>
+<div class="brick-wrap col-rev white-t lucida flow-text">
+	<div class="brick">brick 1</div>
+	<div class="brick">brick 2</div>
+	<div class="brick">brick 3</div>
+	<div class="brick">brick 4</div>
+	<div class="brick">brick 5</div>
+</div>
+<p class="courier bold flow-text bold river">.featured / .first / .last</p>
+<div class="brick-wrap white-t lucida flow-text">
+	<div class="brick last">.last</div>
+	<div class="brick">brick 1</div>
+	<div class="brick">brick 2</div>
+	<div class="brick">brick 3</div>
+	<div class="brick">brick 4</div>
+	<div class="brick">brick 5</div>
+	<div class="brick first">.first</div>
+	<div class="brick featured">.featured</div><!-- appears before .first -->
+</div>
+<!-- Containers -->
+<h2 class="lucida heavy blueprint navy-t-s" id="containers">Containers</h2>
+<div class="container flow-text center lucida river white-t navy-t-s">.container</div>
+<p class="padded"></p>
+<div class="container-960 flow-text center lucida river white-t navy-t-s">.container-960</div>
+<p class="padded"></p>
+<div class="container-1200 flow-text center lucida river white-t navy-t-s">.container-1200</div>
+<p class="padded"></p>
+<div class="container-1600 flow-text center lucida river white-t navy-t-s">.container-1600</div>
+<p class="padded"></p>
+<div class="container-fluid flow-text center lucida river white-t navy-t-s">.container-fluid</div>
+<p class="spacer"></p>
+</body>
+</html>
