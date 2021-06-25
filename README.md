@@ -9,7 +9,9 @@ There are four methods for creating layouts:
 
 ## Getting Started
 For B3Grid, CSS Grid, and Print Grid, you will need the **/source/blueprintgrid.css** file. 
+
 To make a PolyGrid, you only need the **/source/blueprintgrid_polygrids.css** file.
+
 Both of the above files are also available in a minified format. 
 
 ### Documentation
