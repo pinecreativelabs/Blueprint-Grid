@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Responsive Demo</title>
+	<meta name="description" content="Blueprint Grid responsive behavior demo." />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="source/icons/bpg48.png" type="image/x-icon" />
+	<link rel="icon" href="source/icons/bpg.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="source/icons/bpg100.png" />
+	
+	<!-- CORE CSS  -->
+	<link href="source/brutalist.min.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="source/blueprintgrid.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+		.block-wrap .block { border: 2px solid #333; padding: 1.25em; background: #e6e6e6; }
+		.brick-wrap .brick { border: 2px solid #3B0B0B; background: #610B0B;}
+		.tiles li { border: 2px solid #6e6e6e; outline: 3px solid #e6e6e6; background: #efefef; padding: 0.5em;}
+	</style>
+</head>
+<body class="infinitile">
+<div class="brick-wrap bw100 bh25 center" style="margin-bottom: 1.25em;">
+	<h1 class="brick bw50 md-75 sm-75 xs-100 courier blueprint box-s bold"><i class="bi bi-corners"></i><br />Responsive Demo</h1>
+</div>
+
+<p class="flow-text padded lucida blueprint">Three column layout that becomes two columns over one full column on medium and small screens. All three columns become a full column on extra small screens.</p>
+<div class="container">
+	<div class="row center bh30 stretch">
+		<div class="block bw33 md-50 sm-50 xs-100 river">
+			<p class="white-t fluid-text tahoma padded"><strong>Block 1</strong><br />50% width on medium &amp; small screens, 100% width on extra-small screens.</p>
+		</div>
+		<div class="block bw33 md-50 sm-50 xs-100 river">
+			<p class="white-t fluid-text tahoma padded"><strong>Block 2</strong><br />50% width on medium &amp; small screens, 100% width on extra-small screens.</p>
+		</div>
+		<div class="block bw33 md-100 sm-100 xs-100 river">
+			<p class="white-t fluid-text tahoma padded"><strong>Block 3</strong><br />100% width on medium, small, and extra-small screens.</p>
+		</div>
+	</div>
+</div>
+<p class="spacer"></p>
+</body>
+</html>
