@@ -609,7 +609,7 @@ ul.tiles>li>a {display: block; width: 100%; height: 100%; padding: 1em;}
 }
 
 /* XX-Small - Wearables */
-@media only screen and (max-width:165px){
+@media only screen and (max-width:240px){
 	.xxs-5, .xxs-10, .xxs-15, .xxs-20, .xxs-80, .xxs-85, .xxs-90, .xxs-95, .xxs-100, .xxs-full { 
 		-ms-flex-preferred-size: 100%; -webkit-flex-basis: 100%; flex-basis: 100%; width: 100%; max-width: 100%;
 	}
