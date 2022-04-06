@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Chaos Grid Demo</title>
+	<meta name="description" content="The anti-grid grid." />
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="source/icons/bpg48.png" type="image/x-icon" />
+	<link rel="icon" href="source/icons/bpg.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="source/icons/bpg100.png" />
+	
+	<!-- CORE CSS  -->
+	<link href="source/blueprintgrid.css" type="text/css" rel="stylesheet" media="all"/>
+	<link href="source/chaos-grid.css" type="text/css" rel="stylesheet" media="all"/>
+	
+	<link href="source/brutalist.min.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+		.chaos-grid h1, .chaos-grid h2, .chaos-grid h3, .chaos-grid h4{padding: 4px 0 4px 0; margin: 0;}
+	</style>
+</head>
+<body class="infinitile" style="overflow-x:hidden;">
+<div class="block-wrap bw100 center" style="margin-bottom: 2em; margin-top: 2em;">
+	<div class="block bw50 blueprint box-s">
+		<h1 class="courier"><i class="bi bi-explode throb"></i>cHaOs GrId</h1>
+		<h2 class="flow-text lucida">The anti-grid grid.</h2>
+	</div>
+</div>
+
+<div class="padded">
+	<h3>DEMO 1: Default View</h3>
+	<p>Normal view without any additional classes applied.</p>
+</div>
+
+<div class="emptiness padded">
+	<!-- let the chaos begin! -->
+	<div class="chaos-grid">
+		
+		<div class="padded winter bw25 xs-100 sm-100 butter-t">
+			<h4 class="lucida flow-text"><i class="bi bi-snowflake"></i> Winter DIV</h4>
+			<p class="tahoma">I am a normal <em>div</em> element. Using B3Grid, my width is 25% on devices <em>over</em> 480px, and 100% on devices <em>under</em> 480px.</p>
+		</div>
+	
+		<article class="padded spring seaweed-t lime-t-s georgia">
+			<h3 class="flow-text"><i class="bi bi-sprout"></i> Spring Article</h3>
+			<p>This is a springtime article element, and I have no set width.</p>
+		</article>
+	
+		<section class="padded summer sapphire-t">
+			<h3 class="flow-text"><i class="bi bi-ocean"></i> Summer Surf Section</h3>
+			<p>This is a sufin' summery section element. <i class="bi bi-surf bi-3x"></i></p>
+		</section>
+	
+		<article class="padded autumn bbq-t">
+			<h3 class="lucida flow-text"><i class="bi bi-fall"></i> Autumn Article</h3><hr />
+			<p class="tahoma">Autumn is my favorite season.<br /><small>[end of article]</small></p>
+		</article>
+		
+		<blockquote class="blueprint padded impact" style="font-size: 1.33em;">I am an impactful blockquote block.</blockquote>
+	
+		<p class="padded pool-party"><strong><i class="bi bi-wet"></i> PARAGRAPH.</strong><br />I'm just a plain 'ol paragraph element. I am a pool of words.</p>
+	
+		<figure class="padded brown center">
+			<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-r-fast large-thumb crop" />
+			<figcaption class="comic bold butter-t">Professor Chaos</figcaption>
+		</figure>
+	
+		<div class="psychedelic padded rounded"><img src="source/images/spiral.png" alt="spiral" class="invert xlarge-thumb spin-fast" /></div>
+		<a href="#" class="cherry-vanilla bold lucida flow-text padded hue-h">I am<br />a link</a>
+		<img src="source/images/emprint_blue.jpg" alt="Blue Emily" class="jumbo-thumb" />
+	
+		<article class="padded rice charcoal-t cellophane bw33 xs-100 sm-100 md-100">
+			<h2 class="impact flow-text"><i class="bi bi-article"></i> Cellophane News</h2>
+			<p class="courier">The news is that cellophane is a thin film of regenerated cellulose. It's usually transparent and is used primarily as a packaging material.</p>
+		</article>
+		<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-fast xlarge-thumb crop" />
+		<section class="padded seaweed-slime bw25 xs-100 sm-100 md-100">
+			<h3 class="flow-text tahoma">Section</h3>
+			<p class="lucida">I am a section element. I take up 25% of the width on large devices and up.</p>
+		</section>
+	</div><!-- end chaos-grid wrapper -->
+</div>
+
+<p class="padded"></p>
+<div class="padded">
+	<h3>DEMO 2: Orderly-On-Mobile</h3>
+	<p>Same as above, but all elements should appear as full-width blocks on devices 667px and below.</p>
+</div>
+
+<div class="emptiness padded">
+	<!-- let the chaos begin! -->
+	<div class="chaos-grid orderly-on-mobile">
+		
+		<div class="padded winter bw25 xs-100 sm-100 butter-t">
+			<h4 class="lucida flow-text"><i class="bi bi-snowflake"></i> Winter DIV</h4>
+			<p class="tahoma">I am a normal <em>div</em> element. Using B3Grid, my width is 25% on devices <em>over</em> 480px, and 100% on devices <em>under</em> 480px.</p>
+		</div>
+	
+		<article class="padded spring seaweed-t lime-t-s georgia">
+			<h3 class="flow-text"><i class="bi bi-sprout"></i> Spring Article</h3>
+			<p>This is a springtime article element, and I have no set width.</p>
+		</article>
+	
+		<section class="padded summer sapphire-t">
+			<h3 class="flow-text"><i class="bi bi-ocean"></i> Summer Surf Section</h3>
+			<p>This is a sufin' summery section element. <i class="bi bi-surf bi-3x"></i></p>
+		</section>
+	
+		<article class="padded autumn bbq-t">
+			<h3 class="lucida flow-text"><i class="bi bi-fall"></i> Autumn Article</h3><hr />
+			<p class="tahoma">Autumn is my favorite season.<br /><small>[end of article]</small></p>
+		</article>
+		
+		<blockquote class="blueprint padded impact" style="font-size: 1.33em;">I am an impactful blockquote block.</blockquote>
+	
+		<p class="padded pool-party"><strong><i class="bi bi-wet"></i> PARAGRAPH.</strong><br />I'm just a plain 'ol paragraph element. I am a pool of words.</p>
+	
+		<figure class="padded brown center">
+			<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-r-fast large-thumb crop" />
+			<figcaption class="comic bold butter-t">Professor Chaos</figcaption>
+		</figure>
+	
+		<div class="psychedelic padded rounded"><img src="source/images/spiral.png" alt="spiral" class="invert xlarge-thumb spin-fast" /></div>
+		<a href="#" class="cherry-vanilla bold lucida flow-text padded hue-h">I am<br />a link</a>
+		<img src="source/images/emprint_blue.jpg" alt="Blue Emily" class="jumbo-thumb" />
+	
+		<article class="padded rice charcoal-t cellophane bw33 xs-100 sm-100 md-100">
+			<h2 class="impact flow-text"><i class="bi bi-article"></i> Cellophane News</h2>
+			<p class="courier">The news is that cellophane is a thin film of regenerated cellulose. It's usually transparent and is used primarily as a packaging material.</p>
+		</article>
+		<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-fast xlarge-thumb crop" />
+		<section class="padded seaweed-slime bw25 xs-100 sm-100 md-100">
+			<h3 class="flow-text tahoma">Section</h3>
+			<p class="lucida">I am a section element. I take up 25% of the width on large devices and up.</p>
+		</section>
+	</div><!-- end chaos-grid wrapper -->
+</div>
+
+<p class="padded"></p>
+<div class="padded">
+	<h3>DEMO 3: Push-down Seconds, Pull-up Thirds, Push-left fourths, Pull-right Fifths</h3>
+	<p>Building on Demo 2, we now do the following: push every second element from the bottom, pull every third element from the top, push every fourth element from the left, and pull every fifth element from the right.</p>
+</div>
+<div class="emptiness padded">
+	<!-- let the chaos begin! -->
+	<div class="chaos-grid orderly-on-mobile push-down-seconds pull-up-thirds push-left-fourths pull-right-fifths">
+		
+		<div class="padded winter bw25 xs-100 sm-100 butter-t">
+			<h4 class="lucida flow-text"><i class="bi bi-snowflake"></i> Winter DIV</h4>
+			<p class="tahoma">I am a normal <em>div</em> element. Using B3Grid, my width is 25% on devices <em>over</em> 480px, and 100% on devices <em>under</em> 480px.</p>
+		</div>
+	
+		<article class="padded spring seaweed-t lime-t-s georgia">
+			<h3 class="flow-text"><i class="bi bi-sprout"></i> Spring Article</h3>
+			<p>This is a springtime article element, and I have no set width.</p>
+		</article>
+	
+		<section class="padded summer sapphire-t">
+			<h3 class="flow-text"><i class="bi bi-ocean"></i> Summer Surf Section</h3>
+			<p>This is a sufin' summery section element. <i class="bi bi-surf bi-3x"></i></p>
+		</section>
+	
+		<article class="padded autumn bbq-t">
+			<h3 class="lucida flow-text"><i class="bi bi-fall"></i> Autumn Article</h3><hr />
+			<p class="tahoma">Autumn is my favorite season.<br /><small>[end of article]</small></p>
+		</article>
+		
+		<blockquote class="blueprint padded impact" style="font-size: 1.33em;">I am an impactful blockquote block.</blockquote>
+	
+		<p class="padded pool-party"><strong><i class="bi bi-wet"></i> PARAGRAPH.</strong><br />I'm just a plain 'ol paragraph element. I am a pool of words.</p>
+	
+		<figure class="padded brown center">
+			<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-r-fast large-thumb crop" />
+			<figcaption class="comic bold butter-t">Professor Chaos</figcaption>
+		</figure>
+	
+		<div class="psychedelic padded rounded"><img src="source/images/spiral.png" alt="spiral" class="invert xlarge-thumb spin-fast" /></div>
+		<a href="#" class="cherry-vanilla bold lucida flow-text padded hue-h">I am<br />a link</a>
+		<img src="source/images/emprint_blue.jpg" alt="Blue Emily" class="jumbo-thumb" />
+	
+		<article class="padded rice charcoal-t cellophane bw33 xs-100 sm-100 md-100">
+			<h2 class="impact flow-text"><i class="bi bi-article"></i> Cellophane News</h2>
+			<p class="courier">The news is that cellophane is a thin film of regenerated cellulose. It's usually transparent and is used primarily as a packaging material.</p>
+		</article>
+		<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-fast xlarge-thumb crop" />
+		<section class="padded seaweed-slime bw25 xs-100 sm-100 md-100">
+			<h3 class="flow-text tahoma">Section</h3>
+			<p class="lucida">I am a section element. I take up 25% of the width on large devices and up.</p>
+		</section>
+	</div><!-- end chaos-grid wrapper -->
+</div>
+
+<p class="padded"></p>
+<div class="padded">
+	<h3>DEMO 4: Relative Chaos</h3>
+	<p>Building on Demo 3, we now make every odd-numbered element relative-positioned, while even-numbered elements are absolute-positioned.</p>
+</div>
+<div class="emptiness padded">
+	<!-- let the chaos begin! -->
+	<div class="chaos-grid orderly-on-mobile relative push-down-seconds pull-up-thirds push-left-fourths pull-right-fifths">
+		
+		<div class="padded winter bw25 xs-100 sm-100 butter-t">
+			<h4 class="lucida flow-text"><i class="bi bi-snowflake"></i> Winter DIV</h4>
+			<p class="tahoma">I am a normal <em>div</em> element. Using B3Grid, my width is 25% on devices <em>over</em> 480px, and 100% on devices <em>under</em> 480px.</p>
+		</div>
+	
+		<article class="padded spring seaweed-t lime-t-s georgia">
+			<h3 class="flow-text"><i class="bi bi-sprout"></i> Spring Article</h3>
+			<p>This is a springtime article element, and I have no set width.</p>
+		</article>
+	
+		<section class="padded summer sapphire-t">
+			<h3 class="flow-text"><i class="bi bi-ocean"></i> Summer Surf Section</h3>
+			<p>This is a sufin' summery section element. <i class="bi bi-surf bi-3x"></i></p>
+		</section>
+	
+		<article class="padded autumn bbq-t">
+			<h3 class="lucida flow-text"><i class="bi bi-fall"></i> Autumn Article</h3><hr />
+			<p class="tahoma">Autumn is my favorite season.<br /><small>[end of article]</small></p>
+		</article>
+		
+		<blockquote class="blueprint padded impact" style="font-size: 1.33em;">I am an impactful blockquote block.</blockquote>
+	
+		<p class="padded pool-party"><strong><i class="bi bi-wet"></i> PARAGRAPH.</strong><br />I'm just a plain 'ol paragraph element. I am a pool of words.</p>
+	
+		<figure class="padded brown center">
+			<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-r-fast large-thumb crop" />
+			<figcaption class="comic bold butter-t">Professor Chaos</figcaption>
+		</figure>
+	
+		<div class="psychedelic padded rounded"><img src="source/images/spiral.png" alt="spiral" class="invert xlarge-thumb spin-fast" /></div>
+		<a href="#" class="cherry-vanilla bold lucida flow-text padded hue-h">I am<br />a link</a>
+		<img src="source/images/emprint_blue.jpg" alt="Blue Emily" class="jumbo-thumb" />
+	
+		<article class="padded rice charcoal-t cellophane bw33 xs-100 sm-100 md-100">
+			<h2 class="impact flow-text"><i class="bi bi-article"></i> Cellophane News</h2>
+			<p class="courier">The news is that cellophane is a thin film of regenerated cellulose. It's usually transparent and is used primarily as a packaging material.</p>
+		</article>
+		<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-fast xlarge-thumb crop" />
+		<section class="padded seaweed-slime bw25 xs-100 sm-100 md-100">
+			<h3 class="flow-text tahoma">Section</h3>
+			<p class="lucida">I am a section element. I take up 25% of the width on large devices and up.</p>
+		</section>
+	</div><!-- end chaos-grid wrapper -->
+</div>
+
+<p class="padded"></p>
+<div class="padded">
+	<h3>DEMO 5: Absolute Chaos</h3>
+	<p>Building on Demo 3, we now make every odd-numbered element absolute-positioned, while even-numbered elements are relative-positioned.</p>
+</div>
+<div class="emptiness padded">
+	<!-- let the chaos begin! -->
+	<div class="chaos-grid orderly-on-mobile absolute push-down-seconds pull-up-thirds push-left-fourths pull-right-fifths">
+		
+		<div class="padded winter bw25 xs-100 sm-100 butter-t">
+			<h4 class="lucida flow-text"><i class="bi bi-snowflake"></i> Winter DIV</h4>
+			<p class="tahoma">I am a normal <em>div</em> element. Using B3Grid, my width is 25% on devices <em>over</em> 480px, and 100% on devices <em>under</em> 480px.</p>
+		</div>
+	
+		<article class="padded spring seaweed-t lime-t-s georgia">
+			<h3 class="flow-text"><i class="bi bi-sprout"></i> Spring Article</h3>
+			<p>This is a springtime article element, and I have no set width.</p>
+		</article>
+	
+		<section class="padded summer sapphire-t">
+			<h3 class="flow-text"><i class="bi bi-ocean"></i> Summer Surf Section</h3>
+			<p>This is a sufin' summery section element. <i class="bi bi-surf bi-3x"></i></p>
+		</section>
+	
+		<article class="padded autumn bbq-t">
+			<h3 class="lucida flow-text"><i class="bi bi-fall"></i> Autumn Article</h3><hr />
+			<p class="tahoma">Autumn is my favorite season.<br /><small>[end of article]</small></p>
+		</article>
+		
+		<blockquote class="blueprint padded impact" style="font-size: 1.33em;">I am an impactful blockquote block.</blockquote>
+	
+		<p class="padded pool-party"><strong><i class="bi bi-wet"></i> PARAGRAPH.</strong><br />I'm just a plain 'ol paragraph element. I am a pool of words.</p>
+	
+		<figure class="padded brown center">
+			<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-r-fast large-thumb crop" />
+			<figcaption class="comic bold butter-t">Professor Chaos</figcaption>
+		</figure>
+	
+		<div class="psychedelic padded rounded"><img src="source/images/spiral.png" alt="spiral" class="invert xlarge-thumb spin-fast" /></div>
+		<a href="#" class="cherry-vanilla bold lucida flow-text padded hue-h">I am<br />a link</a>
+		<img src="source/images/emprint_blue.jpg" alt="Blue Emily" class="jumbo-thumb" />
+	
+		<article class="padded rice charcoal-t cellophane bw33 xs-100 sm-100 md-100">
+			<h2 class="impact flow-text"><i class="bi bi-article"></i> Cellophane News</h2>
+			<p class="courier">The news is that cellophane is a thin film of regenerated cellulose. It's usually transparent and is used primarily as a packaging material.</p>
+		</article>
+		<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-fast xlarge-thumb crop" />
+		<section class="padded seaweed-slime bw25 xs-100 sm-100 md-100">
+			<h3 class="flow-text tahoma">Section</h3>
+			<p class="lucida">I am a section element. I take up 25% of the width on large devices and up.</p>
+		</section>
+	</div><!-- end chaos-grid wrapper -->
+</div>
+
+<p class="padded"></p>
+<div class="padded">
+	<h3>DEMO 6: Chaos of Absolute Thirds</h3>
+	<p>Building on Demo 3, we make <em>ONLY</em> every third element absolute-positioned.</p>
+</div>
+<div class="emptiness padded">
+	<!-- let the chaos begin! -->
+	<div class="chaos-grid orderly-on-mobile absolute-thirds push-down-seconds pull-up-thirds push-left-fourths pull-right-fifths">
+		
+		<div class="padded winter bw25 xs-100 sm-100 butter-t">
+			<h4 class="lucida flow-text"><i class="bi bi-snowflake"></i> Winter DIV</h4>
+			<p class="tahoma">I am a normal <em>div</em> element. Using B3Grid, my width is 25% on devices <em>over</em> 480px, and 100% on devices <em>under</em> 480px.</p>
+		</div>
+	
+		<article class="padded spring seaweed-t lime-t-s georgia">
+			<h3 class="flow-text"><i class="bi bi-sprout"></i> Spring Article</h3>
+			<p>This is a springtime article element, and I have no set width.</p>
+		</article>
+	
+		<section class="padded summer sapphire-t">
+			<h3 class="flow-text"><i class="bi bi-ocean"></i> Summer Surf Section</h3>
+			<p>This is a sufin' summery section element. <i class="bi bi-surf bi-3x"></i></p>
+		</section>
+	
+		<article class="padded autumn bbq-t">
+			<h3 class="lucida flow-text"><i class="bi bi-fall"></i> Autumn Article</h3><hr />
+			<p class="tahoma">Autumn is my favorite season.<br /><small>[end of article]</small></p>
+		</article>
+		
+		<blockquote class="blueprint padded impact" style="font-size: 1.33em;">I am an impactful blockquote block.</blockquote>
+	
+		<p class="padded pool-party"><strong><i class="bi bi-wet"></i> PARAGRAPH.</strong><br />I'm just a plain 'ol paragraph element. I am a pool of words.</p>
+	
+		<figure class="padded brown center">
+			<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-r-fast large-thumb crop" />
+			<figcaption class="comic bold butter-t">Professor Chaos</figcaption>
+		</figure>
+	
+		<div class="psychedelic padded rounded"><img src="source/images/spiral.png" alt="spiral" class="invert xlarge-thumb spin-fast" /></div>
+		<a href="#" class="cherry-vanilla bold lucida flow-text padded hue-h">I am<br />a link</a>
+		<img src="source/images/emprint_blue.jpg" alt="Blue Emily" class="jumbo-thumb" />
+	
+		<article class="padded rice charcoal-t cellophane bw33 xs-100 sm-100 md-100">
+			<h2 class="impact flow-text"><i class="bi bi-article"></i> Cellophane News</h2>
+			<p class="courier">The news is that cellophane is a thin film of regenerated cellulose. It's usually transparent and is used primarily as a packaging material.</p>
+		</article>
+		<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-fast xlarge-thumb crop" />
+		<section class="padded seaweed-slime bw25 xs-100 sm-100 md-100">
+			<h3 class="flow-text tahoma">Section</h3>
+			<p class="lucida">I am a section element. I take up 25% of the width on large devices and up.</p>
+		</section>
+	</div><!-- end chaos-grid wrapper -->
+</div>
+
+<p class="padded"></p>
+<div class="padded">
+	<h3>DEMO 7: Offsets of Individual Elements</h3>
+	<p>Building on Demo 3, we apply offset classes to invidual elements.</p>
+</div>
+<div class="emptiness padded">
+	<!-- let the chaos begin! -->
+	<div class="chaos-grid orderly-on-mobile push-down-seconds pull-up-thirds push-left-fourths pull-right-fifths">
+		
+		<div class="padded winter bw25 xs-100 sm-100 butter-t push-up-5x">
+			<h4 class="lucida flow-text"><i class="bi bi-snowflake"></i> Winter DIV</h4>
+			<p class="tahoma">I am a normal <em>div</em> element. Using B3Grid, my width is 25% on devices <em>over</em> 480px, and 100% on devices <em>under</em> 480px.</p>
+			<p class="tahoma bold">Pushed from top 5-fold.</p>
+		</div>
+	
+		<article class="padded spring seaweed-t lime-t-s georgia pull-up-3x push-right-4x">
+			<h3 class="flow-text"><i class="bi bi-sprout"></i> Spring Article</h3>
+			<p>This is a springtime article element, and I have no set width.</p>
+			<p><strong>Pulled from top three-fold, and pushed from right 4-fold.</strong></p>
+		</article>
+	
+		<section class="padded summer sapphire-t pull-right push-down-2x">
+			<h3 class="flow-text"><i class="bi bi-ocean"></i> Summer Surf Section</h3>
+			<p>This is a sufin' summery section element. <i class="bi bi-surf bi-3x"></i></p>
+			<p><strong>Pulled right, pushed from bottom two-fold.</strong></p>
+		</section>
+	
+		<article class="padded autumn bbq-t">
+			<h3 class="lucida flow-text"><i class="bi bi-fall"></i> Autumn Article</h3><hr />
+			<p class="tahoma">Autumn is my favorite season.<br /><small>[end of article]</small></p>
+		</article>
+		
+		<blockquote class="blueprint padded impact" style="font-size: 1.33em;">I am an impactful blockquote block.</blockquote>
+	
+		<p class="padded pool-party pull-right-4x"><strong><i class="bi bi-wet"></i> PARAGRAPH.</strong><br />I'm just a plain 'ol paragraph element. I am a pool of words.<br /><strong>Pulled from the right 4-fold.</strong></p>
+	
+		<figure class="padded brown center push-down-2x push-left-2x">
+			<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-r-fast large-thumb crop" />
+			<figcaption class="comic bold butter-t">Professor Chaos</figcaption>
+		</figure>
+	
+		<div class="psychedelic padded rounded"><img src="source/images/spiral.png" alt="spiral" class="invert xlarge-thumb spin-fast" /></div>
+		<a href="#" class="cherry-vanilla bold lucida flow-text padded hue-h push-right">I am<br />a link</a>
+		<img src="source/images/emprint_blue.jpg" alt="Blue Emily" class="jumbo-thumb pull-left-4x" />
+	
+		<article class="padded rice charcoal-t cellophane bw33 xs-100 sm-100 md-100">
+			<h2 class="impact flow-text"><i class="bi bi-article"></i> Cellophane News</h2>
+			<p class="courier">The news is that cellophane is a thin film of regenerated cellulose. It's usually transparent and is used primarily as a packaging material.</p>
+		</article>
+		<img src="source/images/profchaos.png" alt="Professor Chaos" class="spin-fast xlarge-thumb crop" />
+		<section class="padded seaweed-slime bw25 xs-100 sm-100 md-100 pull-down-3x">
+			<h3 class="flow-text tahoma">Section</h3>
+			<p class="lucida">I am a section element. I take up 25% of the width on large devices and up.</p>
+		</section>
+	</div><!-- end chaos-grid wrapper -->
+</div>
+<p class="padding"></p>
+<p class="padding"></p>
+<p class="padding"></p>
+<p class="padding"></p>
+
+</body>
+</html>
