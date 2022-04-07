@@ -1,7 +1,6 @@
-**1.1 Update:**
+**1.2 Update:**
 
-* Add additional height-restrictive classes for Panes (ex. half, third, etc.), so that Panes can be 2x3, 3x2, 4x2, 2x4, etc.
-* Make all alignment classes responsive across all device types 
-* Removed max limit width for x-large sizes, so that it is now 1201px and up
-* Updated to better support latest Bootstrap grid (5.x)
-* Base and element height and growth rate classes now responsive across devices
+* New Chaos Grid!
+* Minor updates to base width and height classes
+* Segregated grid methods into their own files
+* blueprintgrid.css now includes all methods
