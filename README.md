@@ -1,6 +1,6 @@
 # Blueprint Grid
 ![BPG Cover](http://www.blueprintgrid.com/core/files/images/bpg_social.jpg)
-Blueprint Grid is a multimethod CSS library for creating responsive layouts for mobile apps and websites. It is free and open source under the MIT license. Blueprint Grid is the layout component for [Brutalist Framework](http://www.brutalistframework.com) (version 3+). 
+Blueprint Grid is a multimethod CSS library for creating responsive layouts for mobile apps and websites. It is free and open source under the MIT license. Blueprint Grid is the layout component for [Brutalist Framework](http://www.brutalistframework.com). 
 
 There are four methods for creating layouts: 
 1. **B3Grid**: Blocks and Bricks Base Grid (Flexbox-based)
