@@ -7,13 +7,14 @@ There are four methods for creating layouts:
 2. **CSS grid**: auto-adjusting layouts based on CSS grid
 3. **Print Grid**: paper-friendly print grid
 4. **PolyGrids**: creative grids with multiple dimensions
+5. **Chaos Grid**: anti-grid grid
 
 ## Getting Started
-For B3Grid, CSS Grid, and Print Grid, you will need the **/source/blueprintgrid.css** file. 
+You will only need: **/source/blueprintgrid.css** - or - **/source/blueprintgrid.min.css**
 
-To make a PolyGrid, you only need the **/source/blueprintgrid_polygrids.css** file.
+If you only need a specific method, you can find each grid method in the **/source/methods/** folder in their own CSS files.
 
-Both of the above files are also available in a minified format. 
+All files are also available in a minified format. 
 
 ### Documentation
 You can find documentation in the [Blueprint Grid Wiki](https://github.com/pinecreativelabs/Blueprint-Grid/wiki).
