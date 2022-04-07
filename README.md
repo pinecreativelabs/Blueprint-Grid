@@ -18,3 +18,6 @@ All files are also available in a minified format.
 
 ### Documentation
 You can find documentation in the [Blueprint Grid Wiki](https://github.com/pinecreativelabs/Blueprint-Grid/wiki).
+
+### DEMOS
+You can see live demos at: [BlueprintGrid.com](http://www.blueprintgrid.com).
