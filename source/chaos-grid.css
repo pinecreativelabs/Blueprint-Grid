@@ -110,10 +110,9 @@
 	/* orderly-on-mobile */
 	.orderly-on-mobile>a,.orderly-on-mobile>article,.orderly-on-mobile>blockquote,.orderly-on-mobile>code,
 	.orderly-on-mobile>details,.orderly-on-mobile>div,.orderly-on-mobile>figure,.orderly-on-mobile>form,
-	.orderly-on-mobile>iframe,.orderly-on-mobile>nav,.orderly-on-mobile>p,.orderly-on-mobile>pre,
-	.orderly-on-mobile>section,.orderly-on-mobile>video
+	.orderly-on-mobile>iframe,.orderly-on-mobile>nav,.orderly-on-mobile>p,.orderly-on-mobile>pre,.orderly-on-mobile>section
 	{position: relative; display: block; width: 100%;}
-	.orderly-on-mobile>img{max-width: 100%; height: auto !important;}
+	.orderly-on-mobile>img,.orderly-on-mobile>video{max-width: 100%; height: auto !important; position: relative;}
 	
 	.orderly-on-mobile.absolute-seconds > *:nth-child(2n+0),.orderly-on-mobile.absolute-thirds > *:nth-child(3n+0),
 	.orderly-on-mobile.absolute-fourths > *:nth-child(4n+0),.orderly-on-mobile.absolute-fifths > *:nth-child(5n+0),
