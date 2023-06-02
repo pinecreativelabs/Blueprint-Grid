@@ -11,11 +11,11 @@ There are four methods for creating layouts:
 5. **Chaos Grid**: anti-grid grid
 
 ## Getting Started
-You will only need: **/source/blueprintgrid.css** - or - **/source/blueprintgrid.min.css**
+You will only need: **/source/blueprintgrid.css**
+
+This file will import all the grid method CSS files from the **source/methods** directory.
 
 If you only need a specific method, you can find each grid method in the **/source/methods/** folder in their own CSS files.
-
-All files are also available in a minified format. 
 
 ### Documentation
 You can find documentation in the [Blueprint Grid Wiki](https://github.com/pinecreativelabs/Blueprint-Grid/wiki).
