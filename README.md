@@ -3,7 +3,7 @@
 
 Blueprint Grid is a multimethod CSS library for creating responsive layouts for mobile apps and websites. It is free and open source under the MIT license. Blueprint Grid is the layout component for [Brutalist Framework](http://www.brutalistframework.com). 
 
-There are four methods for creating layouts: 
+There are five methods for creating layouts: 
 1. **B3Grid**: Blocks and Bricks Base Grid (Flexbox-based)
 2. **CSS grid**: auto-adjusting layouts based on CSS grid
 3. **Print Grid**: paper-friendly print grid
@@ -13,9 +13,19 @@ There are four methods for creating layouts:
 ## Getting Started
 You will only need: **/source/blueprintgrid.css**
 
-This file will import all the grid method CSS files from the **source/methods** directory.
+This file will import all the grid method CSS files from the **/source/methods** directory.
 
 If you only need a specific method, you can find each grid method in the **/source/methods/** folder in their own CSS files.
+
+All method CSS source files are found in the **/source/methods** directory:
+* **b3grid.css**
+* **bootstrap-grid.css**
+* **chaos-grid.css**
+* **css-grid.css**
+* **media-queries.css**
+* **polygrids.css**
+* **print-grid.css**
+* **variables.css**
 
 ### Documentation
 You can find documentation in the [Blueprint Grid Wiki](https://github.com/pinecreativelabs/Blueprint-Grid/wiki).
