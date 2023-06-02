@@ -13,11 +13,7 @@ There are five methods for creating layouts:
 ## Getting Started
 You will only need: **/source/blueprintgrid.css**
 
-This file will import all the grid method CSS files from the **/source/methods** directory.
-
-If you only need a specific method, you can find each grid method in the **/source/methods/** folder in their own CSS files.
-
-All method CSS source files are found in the **/source/methods** directory:
+This file will import all the grid method CSS files from the **/source/methods** directory, which contains the following method CSS source files:
 * **b3grid.css**
 * **bootstrap-grid.css**
 * **chaos-grid.css**
@@ -27,8 +23,10 @@ All method CSS source files are found in the **/source/methods** directory:
 * **print-grid.css**
 * **variables.css**
 
+The above files can be referenced independently. The CSS variables file is imported into each of the other files, EXCEPT FOR media-queries and bootstrap-grid.
+
 ### Documentation
-You can find documentation in the [Blueprint Grid Wiki](https://github.com/pinecreativelabs/Blueprint-Grid/wiki).
+You can find detailed documentation in the [Blueprint Grid Wiki](https://github.com/pinecreativelabs/Blueprint-Grid/wiki).
 
 ### DEMOS
 You can see live demos at: [BlueprintGrid.com](https://www.blueprintgrid.com).
