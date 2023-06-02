@@ -21,4 +21,4 @@ If you only need a specific method, you can find each grid method in the **/sour
 You can find documentation in the [Blueprint Grid Wiki](https://github.com/pinecreativelabs/Blueprint-Grid/wiki).
 
 ### DEMOS
-You can see live demos at: [BlueprintGrid.com](http://www.blueprintgrid.com).
+You can see live demos at: [BlueprintGrid.com](https://www.blueprintgrid.com).
