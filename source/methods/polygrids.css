@@ -1,12 +1,12 @@
-/* Blueprint Grid POLYGRIDS 1.0 */
+/* POLYGRIDS */
+@import url('variables.css');
 
 /* PolyGrid */
 .polygrid, .polygrid::before, .polygrid::after, .polygrid>li::before, .polygrid>li::after {
 	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
 }
 .polygrid {
-	list-style: none;
-	display: flex; display: -ms-flex;
+	list-style: none; display: flex; display: -ms-flex;
 	-ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap;
 	justify-content: center; -moz-justify-content: center; -webkit-justify-content: center;
 	align-items: center; -webkit-align-items: center;
@@ -27,9 +27,7 @@
 	display: flex; display: -ms-flex;
 	flex-direction: column;
 	justify-content: center;
-	-webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+	-webkit-hyphens: auto; -ms-hyphens: auto; hyphens: auto;
 	word-break: break-word;
 	text-transform: uppercase;
 	color: #fff; font-weight: 700; font-size: 1.5em;
@@ -89,7 +87,6 @@
 }
 
 /* IsoGrid */
-:root { --isocols: 3;}
 .isogrid{
   margin: 0; padding: 0 0 8px 0; list-style: none;
   display: grid;
@@ -149,7 +146,7 @@
   .isogrid>li:nth-child(4n-3){grid-column-start:2;}
 }
 @media (min-width:900px){
-  :root { -isocols: 7;}
+  :root { --isocols: 7;}
   .isogrid>li:nth-child(4n-3){grid-column-start:auto;}
   .isogrid>li:nth-child(6n-5){grid-column-start:2;}
 }

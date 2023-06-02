@@ -1,6 +1,5 @@
-**1.2 Update:**
+**1.3 Update:**
 
-* New Chaos Grid!
-* Minor updates to base width and height classes
-* Segregated grid methods into their own files
-* blueprintgrid.css now includes all methods
+* blueprintgrid.css is now used to import CSS methods
+* added new variables.css to methods directory
+* segegated media queries from B3Grid into a separte media-queries.css file

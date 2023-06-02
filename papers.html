@@ -26,7 +26,7 @@
 	<!-- Letter Page -->
 	<div class="page letter coconut justify">
 		<h1 class="georgia" style="font-size: 44pt; margin-top: 0; padding-top: 0;">Column Count Demo</h1>
-		<div class="pgrid times">
+		<div class="times">
 			<p>This demo shows the <b>pgrid</b> layout, which is most useful for printed material. By default, there is one column when no other classes are applied to the <b>pgrid</b> wrapper.</p>
 			
 			<h3 class="georgia">Two Columns</h3>
@@ -34,17 +34,16 @@
 			
 			<h3 class="georgia">Three Columns</h3>
 			<p class="cc3">This is a three-column paragraph. Up to 12 columns are supported (<b>cc1 - cc12</b>). The column widths are automatically determined, when no column-width classes are applied. By default, there is 1em of gap spacing between columns. </p>
-		</div>
-		<div class="pgrid cc4 times">
-			<h3 class="georgia c-span">Four Columns</h3>
-			<p>This is the first paragraph, contained within a <b>.pgrid.cc4</b> wrapper.</p>
-			<p>It makes sense that each of these paragraphs should take up one-fourth of the width of the page.</p>
-			<p>Even if there aren't 4 paragraphs within a <b>.cc4</b> wrapper (there's 3 here), all content will still be divided up into 4 columns.</p>
-		</div>
-		<div class="pgrid cc5 times">
-			<h3 class="georgia c-span">Five Columns</h3>
-			<p class="c-span">In the unordered list below, the 15 items should be split into 3 items per column.</p>
-			<ul class="disc">
+
+			<h3 class="georgia">Four Columns</h3>
+			<div class="cc4">
+				<p>This is the first paragraph, contained within a <b>.pgrid.cc4</b> wrapper.</p>
+				<p>It makes sense that each of these paragraphs should take up one-fourth of the width of the page.</p>
+				<p>Even if there aren't 4 paragraphs within a <b>.cc4</b> wrapper (there's 3 here), all content will still be divided up into 4 columns.</p>
+			</div>
+			<h3 class="georgia">Five Columns</h3>
+			<p class="">In the unordered list below, the 15 items should be split into 3 items per column.</p>
+			<ul class="disc cc5">
 				<li>Item 1</li>
 				<li>Item 2</li>
 				<li>Item 3</li>
@@ -70,17 +69,17 @@
 	<!-- Half Letter Page -->
 	<div class="page half-letter coconut justify">
 		<h1 class="georgia" style="font-size: 34pt; margin-top: 0; padding-top: 0;">Column Gap Demo</h1>
-		<p class="times pgrid cc2">Although <b>pgrid</b> has 1em of column gap spacing by default, we can have no gap (<b>.no-gap</b>), or multiply it 2 to 6 times as much as the default. Here, we'll use a 2-column layout.</p>
+		<p class="times cc2 col-gap">To apply a gap between columns, apply the class <em>col-gap</em>, which uses a CSS variable. Alternatively, we can add gaps that are multiples of the element's default font size, ranging from 2 to 6 times. This demo uses two columns.</p>
 		<h3 class="georgia" style="font-size: 20pt; margin-bottom: 0;">2x Gap Width</h3>
-		<p class="pgrid cc2 cg-2x times">Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
+		<p class="cc2 cg-2x times">Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 		<h3 class="georgia" style="font-size: 20pt; margin-bottom: 0;">3x Gap Width</h3>
-		<p class="pgrid cc2 cg-3x times">Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
+		<p class="cc2 cg-3x times">Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 		<h3 class="georgia" style="font-size: 20pt; margin-bottom: 0;">4x Gap Width</h3>
-		<p class="pgrid cc2 cg-4x times">Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
+		<p class="cc2 cg-4x times">Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 		<h3 class="georgia" style="font-size: 20pt; margin-bottom: 0;">5x Gap Width</h3>
-		<p class="pgrid cc2 cg-5x times">Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
+		<p class="cc2 cg-5x times">Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 		<h3 class="georgia" style="font-size: 20pt; margin-bottom: 0;">6x Gap Width</h3>
-		<p class="pgrid cc2 cg-6x times">Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
+		<p class="cc2 cg-6x times">Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 	</div>
 	<p class="spacer"></p>
 	
@@ -91,35 +90,36 @@
 		<h1 class="georgia" style="font-size: 34pt; margin-top: 0; padding-top: 0;">Column Width Demo</h1>
 		<p class="times">In multi-column layouts, we may need to make columns wider or narrower than the default. There are two ways to do this: either CM or EM based widths. </p>
 		<h3 class="georgia" style="font-size: 20pt; margin-bottom: 0;">2cm / 5em Column Widths</h3>
-		<div class="pgrid cw-cm-2 justify" style="font-size: 10pt;">
+		<div class="cw-cm-2" style="font-size: 10pt;">
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 		</div>
 		<h3 class="georgia" style="font-size: 20pt; margin-bottom: 0;">4cm / 10em Column Widths</h3>
-		<div class="pgrid cw-cm-4 justify" style="font-size: 10pt;">
+		<div class="cw-cm-4" style="font-size: 10pt;">
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 		</div>
 		<h3 class="georgia" style="font-size: 20pt; margin-bottom: 0;">6cm / 15em Column Widths</h3>
-		<div class="pgrid cw-cm-6 justify" style="font-size: 10pt;">
+		<div class="cw-cm-6" style="font-size: 10pt;">
+			<p class="c-span">HI. I'm a c-span paragraph. I go all the way across.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 		</div>
 		<h3 class="georgia" style="font-size: 20pt; margin-bottom: 0;">8cm / 20em Column Widths</h3>
-		<div class="pgrid cw-cm-8 justify" style="font-size: 10pt;">
+		<div class="cw-cm-8 justify" style="font-size: 10pt;">
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 		</div>
 		<h3 class="georgia" style="font-size: 20pt; margin-bottom: 0;">12cm / 25em Column Widths</h3>
-		<div class="pgrid cw-cm-12 justify" style="font-size: 10pt;">
+		<div class="cw-cm-12 justify" style="font-size: 10pt;">
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>
 			<p>Lorem ipsum no facer prompta vim, movet ubique qui ei. Pea mei nulla scribentur liberavisse. Discere suavitate nam ad.</p>

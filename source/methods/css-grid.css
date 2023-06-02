@@ -1,41 +1,52 @@
 /* CSS Grid */
+@import url('variables.css');
+
 .grid {display: grid; grid-gap: 0px; grid-auto-flow: row; padding: 0; margin: 0;}
 .grid.col {grid-auto-flow: column;}
-.grid.gap{grid-gap:1.25rem;}
+.grid.gap{grid-gap: var(--gridgap);}
+.grid.rowgap{grid-row-gap: var(--gridrowgap);}
+.grid.colgap{grid-column-gap: var(--gridcolgap);}
+
 .grid.col-1{grid-auto-columns: 100%; grid-template-columns: auto;}
 .grid.col-2{grid-auto-columns: 50%; grid-template-columns: auto auto;}
 .grid.col-3{grid-auto-columns: calc(100% / 3); grid-template-columns: auto auto auto;}
 .grid.col-4{grid-auto-columns: 25%; grid-template-columns: auto auto auto auto;}
 .grid.col-5{grid-auto-columns: 20%; grid-template-columns: auto auto auto auto auto;}
 .grid.col-6{grid-auto-columns: calc(100% / 6); grid-template-columns: auto auto auto auto auto auto;}
+.grid.grid-vars{
+	grid-auto-columns: var(--gridcols);
+	grid-auto-rows: var(--gridrows);
+}
+.grid.row-one-fifth{grid-auto-rows: 20vh;}
+.grid.row-one-quarter, .grid.row-one-fourth {grid-auto-rows: 25vh;}
+.grid.row-one-third{grid-auto-rows: 33.33vh;}
+.grid.row-half{grid-auto-rows: 50vh;}
+.grid.row-two-thirds{grid-auto-rows: 66.67vh;}
+.grid.row-three-quarters, .grid.row-three-fourths{grid-auto-rows: 75vh;}
+.grid.row-full{grid-auto-rows: 100vh;}
 
-.grid.rh-one-fifth{grid-auto-rows: 20vh;}
-.grid.rh-one-quarter, .grid.rh-one-fourth {grid-auto-rows: 25vh;}
-.grid.rh-one-third{grid-auto-rows: 33.33vh;}
-.grid.rh-half{grid-auto-rows: 50vh;}
-.grid.rh-two-thirds{grid-auto-rows: 66.67vh;}
-.grid.rh-three-quarters, .grid.rh-three-fourths{grid-auto-rows: 75vh;}
-.grid.rh-full{grid-auto-rows: 100vh;}
-
+.grid>.col-start {grid-column-start: var(--colstart);}
 .grid>.c-start-1{grid-column-start: 1;}
 .grid>.c-start-2{grid-column-start: 2;}
 .grid>.c-start-3{grid-column-start: 3;}
 .grid>.c-start-4{grid-column-start: 4;}
 .grid>.c-start-5{grid-column-start: 5;}
 .grid>.c-start-6{grid-column-start: 6;}
+.grid>.row-start{grid-row-start: var(--rowstart);}
 .grid>.r-start-1{grid-row-start: 1;}
 .grid>.r-start-2{grid-row-start: 2;}
 .grid>.r-start-3{grid-row-start: 3;}
 .grid>.r-start-4{grid-row-start: 4;}
 .grid>.r-start-5{grid-row-start: 5;}
 .grid>.r-start-6{grid-row-start: 6;}
-
+.grid>.col-end{grid-column-end: var(--colend);}
 .grid>.c-span-1{grid-column-end: span 1;}
 .grid>.c-span-2{grid-column-end: span 2;}
 .grid>.c-span-3{grid-column-end: span 3;}
 .grid>.c-span-4{grid-column-end: span 4;}
 .grid>.c-span-5{grid-column-end: span 5;}
 .grid>.c-span-6{grid-column-end: span 6;}
+.grid>.row-end{grid-row-end: var(--rowend);}
 .grid>.r-span-1{grid-row-end: span 1;}
 .grid>.r-span-2{grid-row-end: span 2;}
 .grid>.r-span-3{grid-row-end: span 3;}

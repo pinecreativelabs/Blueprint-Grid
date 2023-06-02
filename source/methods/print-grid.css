@@ -1,12 +1,17 @@
 /* Print Grid */
-.pgrid{ 
+@import url('variables.css');
+
+.printgrid, .pgrid{ 
 	-moz-column-fill:auto; -webkit-column-fill:auto; column-fill:auto;
-	-webkit-column-gap: 1em; -moz-column-gap: 1em; column-gap: 1em;
+	-moz-column-count: var(--colcount); -webkit-column-count: var(--colcount); column-count: var(--colcount);
+	-webkit-column-gap: var(--colgap); column-gap: var(--colgap); -moz-column-gap: var(--colgap);
 	margin: 0; padding: 0;
 }
-.pgrid.balance{ -moz-column-fill:balance; -webkit-column-fill:balance; column-fill:balance; }
-.pgrid>.c-span{-webkit-column-span: all; column-span: all;}
-.pgrid>ul, .pgrid>ol { margin: 0; padding: 0;}
+.printgrid.balance, .pgrid.balance { -moz-column-fill:balance; -webkit-column-fill:balance; column-fill:balance; }
+.printgrid>.c-span, .pgrid>.c-span, .c-span{-webkit-column-span: all; column-span: all;}
+.printgrid>ul, .pgrid>ul, .printgrid>ol, .pgrid>ol { margin: 0; padding: 0;}
+
+.colcount{-moz-column-count: var(--colcount); -webkit-column-count: var(--colcount); column-count: var(--colcount);}
 .cc1, .col1, .single-col { -moz-column-count:1; -webkit-column-count:1; column-count:1; }
 .cc2, .col2, .double-col { -moz-column-count:2; -webkit-column-count:2; column-count:2; }
 .cc3, .col3, .triple-col { -moz-column-count:3; -webkit-column-count:3; column-count:3; }
@@ -19,6 +24,8 @@
 .cc10 { -moz-column-count:10; -webkit-column-count:10; column-count:10; }
 .cc11 { -moz-column-count:11; -webkit-column-count:11; column-count:11; }
 .cc12 { -moz-column-count:12; -webkit-column-count:12; column-count:12; }
+
+.colwidth{-moz-column-width: var(--colwidth); -webkit-column-width: var(--colwidth); column-width: var(--colwidth);}
 .cw-cm-1 { -moz-column-width: 1cm; -webkit-column-width: 1cm; column-width: 1cm;}
 .cw-cm-2 { -moz-column-width: 2cm; -webkit-column-width: 2cm; column-width: 2cm;}
 .cw-cm-3 { -moz-column-width: 3cm; -webkit-column-width: 3cm; column-width: 3cm;}
@@ -37,6 +44,8 @@
 .cw-em-20 { -moz-column-width: 20em; -webkit-column-width: 20em; column-width: 20em;}
 .cw-em-25 { -moz-column-width: 25em; -webkit-column-width: 25em; column-width: 25em;}
 .cw-em-30 { -moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em;}
+
+.col-gap{-webkit-column-gap: var(--colgap); column-gap: var(--colgap); -moz-column-gap: var(--colgap);}
 .no-gap { -webkit-column-gap: 0; -moz-column-gap: 0; column-gap: 0;}
 .cg-2x { -webkit-column-gap: 2em; -moz-column-gap: 2em; column-gap: 2em;}
 .cg-3x { -webkit-column-gap: 3em; -moz-column-gap: 3em; column-gap: 3em;}

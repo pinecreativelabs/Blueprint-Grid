@@ -1,16 +1,5 @@
 /* ChAoS aNtI-gRiD gRiD */
-
-:root {
-  /* offset variables */
-  --pull-right: -1em;
-  --push-right: 1em;
-  --pull-left: -1em;
-  --push-left: 1em;
-  --pull-up: -1em;
-  --push-up: 1em;
-  --pull-down: -1em;
-  --push-down: 1em;
-}
+@import url('variables.css');
 
 .chaos-grid {
 	width: 100%; position: relative;
