@@ -26,6 +26,9 @@
   --pull-down: -1em;
   --push-down: 1em;
   
+  /* bento grid element border-radius */
+  --rounding: 1rem;
+  
   /* isogrid variable */
   --isocols: 3;
   

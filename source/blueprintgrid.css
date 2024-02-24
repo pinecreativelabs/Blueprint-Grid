@@ -1,16 +1,17 @@
-/* Blueprint Grid 1.3
+/* Blueprint Grid 2.0
  * https://www.blueprintgrid.com 
  * Author: Brad Fogelstrom
  * License: MIT
 */
-
-@import url('variables.css');
 
 /* B3Grid */
 @import url('methods/b3grid.css');
 
 /* CSS Grid */
 @import url('methods/css-grid.css');
+
+/* Bento Grid */
+@import url('methods/bento-grid.css');
 
 /* cHaOs GrId */
 @import url('methods/chaos-grid.css');

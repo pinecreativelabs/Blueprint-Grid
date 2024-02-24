@@ -1,8 +1,8 @@
 /* ChAoS aNtI-gRiD gRiD */
 @import url('variables.css');
 
-.chaos-grid {
-	width: 100%; position: relative;
+.chaos-grid {width: 100%; position: relative;}
+.chaos-grid,.chaos-grid>*{
 	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
 }
 .chaos-grid>a,.chaos-grid>article,.chaos-grid>blockquote,.chaos-grid>code,
@@ -16,7 +16,19 @@
 .chaos-grid>iframe,.chaos-grid>nav,.chaos-grid>p,.chaos-grid>pre,
 .chaos-grid>section{min-width: 10vw;}
 
+/* animate elements upon load 
+@keyframes chaoSlideIn {
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
+}*/
+@keyframes chaoSlideIn {
+  0% {transform: rotate(-20%);}
+  100% {transform: rotate(0);}
+}
+.chaos-grid.slidein>*{animation: 1s ease-out 0s 1 chaoSlideIn;}
+
 /* positioniong */
+.chaos-grid.randomize > * {/*position: absolute; top: 100px; left: 100px; */ position: relative;}
 .chaos-grid.relative > *:nth-child(odd){position: relative; z-index: 1;}
 .chaos-grid.relative > *:nth-child(even){position: absolute; z-index: 2;}
 .chaos-grid.absolute > *:nth-child(odd){position: absolute; z-index: 1;}
