@@ -1,7 +1,9 @@
 # Blueprint Grid
 ![BPG Cover](http://www.blueprintgrid.com/core/files/images/bpg-social.jpg)
 
-Blueprint Grid is a multi-method CSS and javascript library for creating responsive or dynamic layouts for mobile apps and websites. It is free and open source under the MIT license. Blueprint Grid is the layout component for [Brutalist Framework](https://www.brutalistframework.com). 
+Blueprint Grid is a multi-method CSS and javascript library for creating responsive or dynamic layouts for mobile apps and websites. It is free and open source under the MIT license.
+
+Blueprint Grid is the layout component for [Brutalist Framework](https://www.brutalistframework.com). 
 
 Built with:
 * Flexbox CSS
@@ -19,8 +21,8 @@ There are five methods for creating layouts:
 ## Getting Started
 You will need: 
 * **/source/blueprintgrid.css**
-* **/source/methods/bento-grid.js** (if using Bento Grid method)
-* **/source/methods/chaos-grid.js** (if using Chaos Grid method)
+* **/source/methods/js/bento-grid.js** (if using Bento Grid method)
+* **/source/methods/js/chaos-grid.js** (if using Chaos Grid method)
 
 The **blueprintgrid.css** file will import all the grid method CSS files from the **/source/methods** directory, which contains the following method CSS source files:
 * **b3grid.css**
