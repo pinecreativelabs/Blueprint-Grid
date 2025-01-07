@@ -1,4 +1,4 @@
-/* Blueprint Grid 2.0
+/* Blueprint Grid 2.1
  * https://www.blueprintgrid.com 
  * Author: Brad Fogelstrom
  * License: MIT
@@ -24,6 +24,7 @@
 
 /* PolyGrid */
 @import url('methods/polygrids.css');
+@import url('methods/isogrid.css');
 
 /* BOOTSTRAP Grid Support */
 @import url('methods/bootstrap-grid.css');

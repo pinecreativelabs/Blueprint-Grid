@@ -1,4 +1,3 @@
-**2.0 Update:**
+**2.1 Update:**
 
-* Chaos Grid update: new "randomize" class for randomly positioning elements using javascript
-* New layout method: "Bento Grid" layout using javascript
+* Re-work of PolyGrids: multiple CSS polygon shapes using Flexbox
