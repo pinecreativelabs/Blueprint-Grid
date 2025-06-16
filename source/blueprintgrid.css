@@ -1,4 +1,4 @@
-/* Blueprint Grid 2.1
+/* Blueprint Grid 2.2
  * https://www.blueprintgrid.com 
  * Author: Brad Fogelstrom
  * License: MIT
@@ -6,6 +6,7 @@
 
 /* B3Grid */
 @import url('methods/b3grid.css');
+@import url('methods/b3grid-express.css');
 
 /* CSS Grid */
 @import url('methods/css-grid.css');
