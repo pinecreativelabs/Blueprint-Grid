@@ -1,3 +1,4 @@
 **2.2 Update:**
 
 * Updated CSS Grid with min- and max-content column width and other classes
+* Added paper sizes to Print Grid: a8, ansi-c, ansi-d, ansi-e, arch-a, arch-b, arch-c, arch-d, arch-e, arch-e1
