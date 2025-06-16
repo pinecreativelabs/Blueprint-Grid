@@ -10,6 +10,7 @@
   --gridrowgap: 1.25rem;
   --gridcols: 33.33%;
   --gridrows: 200px;
+  --grid-template: 33vh / auto auto auto;
   
   /* PRINT GRID VARIABLES */
   --colcount: 2;

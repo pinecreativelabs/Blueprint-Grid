@@ -14,6 +14,9 @@
 	<!-- CORE CSS  -->
 	<link href="source/brutalist.min.css" type="text/css" rel="stylesheet" media="all"/>
 	<link href="source/blueprintgrid.css" type="text/css" rel="stylesheet" media="all"/>
+	<style>
+	.sample {font-size: 2.5rem; margin: 3rem 0 0 0; padding: 1rem;}
+	</style>
 </head>
 <body class="infinitile">
 
@@ -27,7 +30,8 @@
 </div>
 
 <!-- Single-column grid -->
-<div class="grid col-1 row-full white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
+<h3 class="sample lucida blueprint"><strong>.grid.col-1.row-full.fh</strong></h3>
+<div class="grid col-1 row-full fh white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
 	<div class="river padded center">
 		<h3>Single Column</h3>
 		<p class="flow-text">This 1-column grid row is full-height: <b>.row-full</b></p>
@@ -35,10 +39,11 @@
 </div>
 
 <!-- 2-column grid -->
-<div class="grid col-2 row-half tahoma white-t navy-t-s" style="border-top: 2px solid #0080fe;">
+<h3 class="sample lucida blueprint"><strong>.grid.col-2.row-half.fh</strong></h3>
+<div class="grid fh col-2 row-half tahoma white-t navy-t-s" style="border-top: 2px solid #0080fe;">
 	<div class="river padded center">
 		<h3>Column 1</h3>
-		<p class="flow-text">This 2-column grid row is half-height: <b>.row-half</b></p>
+		<p class="flow-text">This 2-column grid row is half-height.</p>
 	</div>
 	<div class="river padded center">
 		<h3>Column 2</h3>
@@ -46,30 +51,66 @@
 	</div>
 </div>
 
-<!-- 3-column grid -->
-<div class="grid col-3 row-one-third white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
-	<div class="river padded center"><h3 class="flow-text">Column 1</h3><p><b>.row-one-third</b></p></div>
-	<div class="river padded center h100"><h3 class="flow-text">Column 2</h3><p><strong>TIP:</strong> apply a height class to the child element to make it vertically occupy more space (ex. <em>.h100</em>).</p></div>
+<!-- 3-columns -->
+<h3 class="sample lucida blueprint"><strong>.grid.col-3.row-one-third.fh</strong></h3>
+<div class="grid fh col-3 row-one-third white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
+	<div class="river padded center"><h3 class="flow-text">Column 1</h3></div>
+	<div class="river padded center h100"><h3 class="flow-text">Column 2</h3></div>
 	<div class="river padded center"><h3 class="flow-text">Column 3</h3><p>&nbsp;</p></div>
+</div>
+<!-- 3-Column Max -->
+<h3 class="sample lucida blueprint"><strong>.grid.col-3.col-max</strong></h3>
+<div class="grid col-3 col-max white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
+	<div class="river padded center"><h3 class="flow-text">Col 1</h3></div>
+	<div class="river padded center h100"><h3 class="flow-text">Column 2</h3>
+		<p><small>Three-column grid with column-width dependent on widest column.</small></p>
+	</div>
+	<div class="river padded center"><h3 class="flow-text">Col 3</h3><p>&nbsp;</p></div>
+</div>
+<!-- 3-Column Min -->
+<h3 class="sample lucida blueprint"><strong>.grid.col-3.col-min</strong></h3>
+<div class="grid col-3 col-min white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
+	<div class="river padded center"><h3 class="flow-text">Col 1</h3></div>
+	<div class="river padded center h100"><h3 class="flow-text">Column 2</h3>
+		<p><small>Three-column grid with column-width dependent on smallest column.</small></p>
+	</div>
+	<div class="river padded center"><h3 class="flow-text">Col 3</h3><p>&nbsp;</p></div>
+</div>
+
+<!-- Custom Template -->
+<h3 class="sample lucida blueprint"><strong>.grid.custom-template.fh</strong></h3>
+<div class="grid fh custom-template white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
+	<div class="river padded center"><h3 class="flow-text">Col 1</h3></div>
+	<div class="river padded center"><h3 class="flow-text">Column 2</h3>
+		<p><strong>.grid.col-min</strong><br /><small>Three-column grid with column-width dependent on smallest column.</small></p>
+	</div>
+	<div class="river padded center"><h3 class="flow-text">Col 3</h3><p>&nbsp;</p></div>
+	<div class="river padded center"><h3 class="flow-text">Col 3</h3><p>&nbsp;</p></div>
+	<div class="river padded center"><h3 class="flow-text">Col 3</h3><p>&nbsp;</p></div>
+	<div class="river padded center"><h3 class="flow-text">Col 3</h3><p>&nbsp;</p></div>
 </div>
 
 <!-- 4-column grid -->
-<div class="grid col-4 row-one-fourth white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
-	<div class="river padded center"><h3 class="flow-text">Column 1</h3><p><b>.row-one-fourth</b></p></div>
+<h3 class="sample lucida blueprint"><strong>.grid.col-4.row-one-fourth.fh</strong></h3>
+<div class="grid col-4 row-one-fourth fh white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
+	<div class="river padded center"><h3 class="flow-text">Column 1</h3><p>&nbsp;</p></div>
 	<div class="river padded center"><h3 class="flow-text">Column 2</h3><p>&nbsp;</p></div>
 	<div class="river padded center"><h3 class="flow-text">Column 3</h3><p>&nbsp;</p></div>
 	<div class="river padded center"><h3 class="flow-text">Column 4</h3><p>&nbsp;</p></div>
 </div>
 
 <!-- 5-column grid -->
-<div class="grid col-5 row-one-fifth white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
-	<div class="river padded center"><h3 class="flow-text">Column 1</h3><p><b>.row-one-fifth</b></p></div>
+<h3 class="sample lucida blueprint"><strong>.grid.col-5</strong></h3>
+<div class="grid col-5 white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
+	<div class="river padded center"><h3 class="flow-text">Column 1</h3><p>&nbsp;</p></div>
 	<div class="river padded center"><h3 class="flow-text">Column 2</h3><p>&nbsp;</p></div>
 	<div class="river padded center"><h3 class="flow-text">Column 3</h3><p>&nbsp;</p></div>
 	<div class="river padded center"><h3 class="flow-text">Column 4</h3><p>&nbsp;</p></div>
 	<div class="river padded center"><h3 class="flow-text">Column 5</h3><p>&nbsp;</p></div>
 </div>
+
 <!-- 6-column Grid -->
+<h3 class="sample lucida blueprint"><strong>.grid.col-6</strong></h3>
 <div class="grid col-6 white-t navy-t-s tahoma" style="border-top: 2px solid #0080fe;">
 	<div class="river padded center"><h3 class="flow-text">Column 1</h3></div>
 	<div class="river padded center"><h3 class="flow-text">Column 2</h3></div>

@@ -1,4 +1,4 @@
-# Blueprint Grid
+# Blueprint Grid 2.2
 ![BPG Cover](http://www.blueprintgrid.com/core/files/images/bpg-social.jpg)
 
 Blueprint Grid is a multi-method CSS and javascript library for creating responsive or dynamic layouts for mobile apps and websites. It is free and open source under the MIT license.
