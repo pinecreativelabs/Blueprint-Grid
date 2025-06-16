@@ -2,11 +2,13 @@
 @import url('variables.css');
 
 /* Container Wrappers */
-.container, .container-fluid, .container-960, .container-1200, .container-1600, .wrapper, .wrap {
+.container, .container-fluid, .container-600, .container-960,
+.container-1200, .container-1600, .wrapper, .wrap {
   margin-right: auto; margin-left: auto;
   padding-right: 0; padding-left: 0;
 }
 .container-fluid, .wrapper, .wrap { width: 100%; max-width: 100%; }
+.container-600{ max-width:600px; }
 .container-960 { max-width: 960px; }
 .container-1200 { max-width: 1200px; }
 .container-1600 { max-width: 1600px; }
