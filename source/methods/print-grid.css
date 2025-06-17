@@ -104,10 +104,14 @@
 .paper>.page.gov-legal.landscape {width: 13in; max-width: 330mm; height: 8.5in; max-height: 216mm;}
 .paper>.page.gov-letter {width: 8in; max-width: 203mm; height: 10.5in; max-height: 267mm;}
 .paper>.page.gov-letter.landscape {width: 10.5in; max-width: 267mm; height: 8in; max-height: 203mm;}
+.paper>.page.edp {width: 11in; max-width: 279mm; height: 14in; max-height: 356mm;}
+.paper>.page.edp.landscape {width: 14in; max-width: 356mm; height: 11in; max-height: 279mm;}
 .paper>.page.tabloid, .paper>.page.ansi-b {width: 11in; max-width: 279mm; height: 17in; max-height: 432mm;}
 .paper>.page.ledger, .paper>.page.ansi-b.landscape { width: 17in; max-width: 432mm; height: 11in; max-height: 279mm;}
-.paper>.page.jr-legal {width: 5in; max-width: 127mm; height: 8in; max-height: 203mm;}
-.paper>.page.jr-legal.landscape {width: 8in; max-width: 203mm; height: 5in; max-height: 127mm;}
+.paper>.page.jr-legal, .paper>.page.junior-legal {width: 5in; max-width: 127mm; height: 8in; max-height: 203mm;}
+.paper>.page.jr-legal.landscape, .paper>.page.junior-legal.landscape {
+	width: 8in; max-width: 203mm; height: 5in; max-height: 127mm;
+}
 .paper>.page.ansi-c {width: 17in; max-width: 432mm; height: 22in; max-height:559mm;}
 .paper>.page.ansi-c.landscape {width: 22in; max-width: 559mm; height: 17in; max-height:432mm;}
 .paper>.page.ansi-d {width: 22in; max-width: 559mm; height: 34in; max-height: 864mm;}

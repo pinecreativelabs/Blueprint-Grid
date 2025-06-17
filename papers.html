@@ -16,17 +16,62 @@
 	<link href="source/blueprintgrid.css" type="text/css" rel="stylesheet" media="all"/>
 </head>
 <body class="infinitile">
-<div class="block-wrap bw100 center"><div class="block bw50 sm-100 blueprint box-s courier">
+<div class="flex"><div class="padded center half"><div class="blueprint padded rounded box-s courier">
 	<h1><i class="bi bi-file"></i><br />PAPER PAGES</h1>
 	<strong><a href="https://github.com/pinecreativelabs/Blueprint-Grid/wiki/Print-Grid" target="_blank" class="btn charcoal rice-t invert-h">Documentation &raquo;</a></strong>
 	<p class="spacer"></p>
+	<p class="left-align">All By default, all paper pages are in the portrait orientation. All can be changed to a landscape orientation by adding the class <strong><em>landscape</em></strong>. An example might be:<br /><br />
+	<strong><em>.paper > .page.letter.landscape</em></strong><br /><br />This will create a 11 x 8.5 inch paper page.</p>
+	<p class="spacer"></p>
+</div></div><div class="padded half"><div class="padded white charcoal-b b-s-k charcoal-t times">
+	<h3 class="flow-text georgia"><strong>Supported Paper Sizes</strong></h3>
+	<div class="flex"><div class="padded half">
+		<ul class="none">
+			<li><b>.a0</b> (23.1 x 46.8 in)</li>
+			<li><b>.a1</b> (23.4 x 33.1 in)</li>
+			<li><b>.a2</b> (16.5 x 23.4 in)</li>
+			<li><b>.a3</b> (11.7 x 16.5 in)</li>
+			<li><b>.a4</b> (8.3 x 11.7 in)</li>
+			<li><b>.a5</b> (5.8 x 8.3 in)</li>
+			<li><b>.a6</b> (4.1 x 5.8 in)</li>
+			<li><b>.a7</b> (2.9 x 4.1 in)</li>
+			<li><b>.a8</b> (2.0 x 2.9 in)</li>
+			<li><b>.a9</b> (1.5 x 2.0 in)</li>
+			<li><b>.a10</b> (1 x 1.5 in)</li>
+			<li><b>.b5</b> (176 x 250 mm)</li>
+			<li><b>.c5</b> (162 x 229 mm)</li>
+			<li><b>.biz-card</b> (2 x 3.5 in)</li>
+			<li><b>.gov-legal</b> (8.5 x 13 in)</li>
+			<li><b>.gov-letter</b> (10.5 x 8 in)</li>
+		</ul>
+	</div><div class="padded half">
+		<ul class="none">
+			<li><b>.edp</b> (11 x 14 in)</li>
+			<li><b>.letter / .ansi-a</b> (8.5 x 11 in)</li>
+			<li><b>.half-letter / .memo / .statement</b> (5.5 x 8.5 in)</li>
+			<li><b>.legal</b> (8.5 x 14 in)</li>
+			<li><b>.tabloid / .ansi-b</b> (11 x 17 in)</li>
+			<li><b>.ledger</b> (17 x 11 in)</li>
+			<li><b>.jr-legal</b> (5 x 8 in)</li>
+			<li><b>.ansi-c</b> (17 x 22 in)</li>
+			<li><b>.ansi-d</b> (22 x 34 in)</li>
+			<li><b>.ansi-e</b> (34 x 44 in)</li>
+			<li><b>.arch-a</b> (9 x 12 in)</li>
+			<li><b>.arch-b</b> (12 x 18 in)</li>
+			<li><b>.arch-c</b> (18 x 24 in)</li>
+			<li><b>.arch-d</b> (24 x 36 in)</li>
+			<li><b>.arch-e</b> (36 x 48 in)</li>
+			<li><b>.arch-e1</b> (34 x 44 in)</li>
+		</ul>
+	</div></div>
 </div></div>
+<p class="spacer"></p>
 <!-- Paper Wrapper -->
 <div class="paper emptiness">
 	<h2 class="courier white-t bold center">Letter Page</h2>
 	<p class="flow-text white-t center courier"><strong>8.5 x 11 in</strong> (216 x 279 mm)</p>
 	<!-- Letter Page -->
-	<div class="page letter coconut justify">
+	<div class="page letter coconut pad justify">
 		<h1 class="georgia" style="font-size: 44pt; margin-top: 0; padding-top: 0;">Column Count Demo</h1>
 		<div class="times">
 			<p>This demo shows the <b>pgrid</b> layout, which is most useful for printed material. By default, there is one column when no other classes are applied to the <b>pgrid</b> wrapper.</p>
@@ -65,11 +110,24 @@
 		</div>
 	</div>
 	<p class="spacer"></p>
+	<h2 class="courier white-t bold center">Business Card</h2>
+	<div class="wrap-1200"><div class="flex"><div class="padded half paper">
+		<div class="page biz-card coconut pad">
+			<h3 class="georgia" style="font-size: 22pt; padding: 0; margin:0;"><strong>Portrait<br />Business<br />Card</strong></h3>
+			<p class="times">2in x 3.5in<br /><small>(51mm x 89mm)</small></p>
+		</div>
+	</div><div class="padded half paper">
+		<div class="page biz-card landscape coconut pad">
+			<h3 class="georgia" style="font-size: 22pt; padding: 0; margin: 0;"><strong>Landscape Business Card</strong></h3>
+			<p class="times">3.5in x 2in<br /><small>(89mm x 51mm)</small></p>
+		</div>
+	</div></div></div>
+	<p class="spacer"></p>
 	
 	<h2 class="courier white-t bold center">Half Letter Page</h2>
 	<p class="flow-text white-t center courier"><strong>5.5 x 8.5 in</strong> (140 x 216 mm)</p>
 	<!-- Half Letter Page -->
-	<div class="page half-letter coconut justify">
+	<div class="page half-letter coconut pad justify">
 		<h1 class="georgia" style="font-size: 34pt; margin-top: 0; padding-top: 0;">Column Gap Demo</h1>
 		<p class="times cc2 col-gap">To apply a gap between columns, apply the class <em>col-gap</em>, which uses a CSS variable. Alternatively, we can add gaps that are multiples of the element's default font size, ranging from 2 to 6 times. This demo uses two columns.</p>
 		<h3 class="georgia" style="font-size: 20pt; margin-bottom: 0;">2x Gap Width</h3>
@@ -88,7 +146,7 @@
 	<h2 class="courier white-t bold center">A4 Page</h2>
 	<p class="flow-text white-t center courier"><strong>8.3 x 11.7 in</strong> (210 x 297 mm)</p>
 	<!-- A4 Page -->
-	<div class="page a4 coconut">
+	<div class="page a4 pad coconut">
 		<h1 class="georgia" style="font-size: 34pt; margin-top: 0; padding-top: 0;">Column Width Demo</h1>
 		<p class="times">In multi-column layouts, we may need to make columns wider or narrower than the default. There are two ways to do this: either CM or EM based widths. </p>
 		<h3 class="georgia" style="font-size: 20pt; margin-bottom: 0;">2cm / 5em Column Widths</h3>
