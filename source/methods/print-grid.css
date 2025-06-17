@@ -57,8 +57,10 @@
 .paper {display: block; padding: 0; margin: 0 auto; width: 100%; height: auto;}
 .paper>.page {
 	box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
-	padding: 1cm; margin: 0 auto;
+	margin: 0 auto;
 }
+.paper>.page.padded, .paper>.page.pad{padding: 1cm;}
+.paper>.page.biz-card.padded, .paper>.page.biz-card.pad{padding:2mm;}
 .paper>.page.no-pad{padding: 0;}
 .paper>.page.a0 { width: 23.1in; max-width: 841mm; height: 46.8in; max-height: 1189mm;}
 .paper>.page.a0.landscape { width: 46.8in; max-width: 1189mm; height: 33.1in; max-height: 841mm;}
@@ -86,6 +88,8 @@
 .paper>.page.b5.landscape { width: 250mm; max-width: 250mm; height: 176mm; max-height: 176mm;}
 .paper>.page.c5 { width: 162mm; max-width: 162mm; height: 229mm; max-height: 229mm;}
 .paper>.page.c5.landscape { width: 229mm; max-width: 229mm; height: 162mm; max-height: 162mm;}
+.paper>.page.biz-card {width: 2in; max-width: 51mm; height: 3.5in; max-height: 89mm;}
+.paper>.page.biz-card.landscape{width: 3.5in; max-width: 89mm; height: 2in; max-height: 51mm;}
 .paper>.page.letter, .paper>.page.ansi-a { width: 8.5in; max-width: 216mm; height: 11in; max-height: 279mm;}
 .paper>.page.letter.landscape, .paper>.page.ansi-a.landscape { width: 11in; max-width: 279mm; height: 8.5in; max-height: 216mm;}
 .paper>.page.half-letter, .paper>.page.statement, .paper>.page.memo {
