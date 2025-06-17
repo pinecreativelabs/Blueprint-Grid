@@ -60,31 +60,65 @@
 	padding: 1cm; margin: 0 auto;
 }
 .paper>.page.no-pad{padding: 0;}
-.paper>.page.a0 { width: 33.1in; max-width: 841mm; height: 46.8in; max-height: 1189mm;}
+.paper>.page.a0 { width: 23.1in; max-width: 841mm; height: 46.8in; max-height: 1189mm;}
+.paper>.page.a0.landscape { width: 46.8in; max-width: 1189mm; height: 33.1in; max-height: 841mm;}
 .paper>.page.a1 { width: 23.4in; max-width: 594mm; height: 33.1in; max-height: 841mm;}
+.paper>.page.a1.landscape { width: 33.1in; max-width: 841mm; height: 23.4in; max-height: 594mm;}
 .paper>.page.a2 { width: 16.5in; max-width: 420mm; height: 23.4in; max-height: 594mm;}
+.paper>.page.a2.landscape { width: 23.4in; max-width: 594mm; height: 16.5in; max-height: 420mm;}
 .paper>.page.a3 { width: 11.7in; max-width: 297mm; height: 16.5in; max-height: 420mm;}
+.paper>.page.a3.landscape { width: 16.5in; max-width: 420mm; height: 11.7in; max-height: 297mm;}
 .paper>.page.a4 { width: 8.3in; max-width: 210mm; height: 11.7in; max-height: 297mm;}
+.paper>.page.a4.landscape { width: 11.7in; max-width: 297mm; height: 8.3in; max-height: 210mm;}
 .paper>.page.a5 { width: 5.8in; max-width: 148mm; height: 8.3in; max-height: 210mm;}
+.paper>.page.a5.landscape { width: 8.3in; max-width: 210mm; height: 5.8in; max-height: 148mm;}
 .paper>.page.a6 { width: 4.1in; max-width: 105mm; height: 5.8in; max-height: 148mm;}
+.paper>.page.a6.landscape { width: 5.8in; max-width: 148mm; height: 4.1in; max-height: 105mm;}
 .paper>.page.a7 { width: 2.9in; max-width: 74mm; height: 4.1in; max-height: 105mm;}
+.paper>.page.a7.landscape { width: 4.1in; max-width: 105mm; height: 2.9in; max-height: 74mm;}
 .paper>.page.a8 { width: 2.0in; max-width: 52mm; height: 2.9in; max-height: 74mm;}
+.paper>.page.a8.landscape { width: 2.9in; max-width: 74mm; height: 2.0in; max-height: 52mm;}
+.paper>.page.a9 { width: 1.5in; max-width: 37mm; height: 2.0in; max-height: 52mm;}
+.paper>.page.a9.landscape { width: 2.0in; max-width: 52mm; height: 1.5in; max-height: 37mm;}
+.paper>.page.a10 { width: 1.0in; max-width: 26mm; height: 1.5in; max-height: 37mm;}
+.paper>.page.a10.landscape { width: 1.5in; max-width: 37mm; height: 1.0in; max-height: 26mm;}
 .paper>.page.b5 { width: 176mm; max-width: 176mm; height: 250mm; max-height: 250mm;}
+.paper>.page.b5.landscape { width: 250mm; max-width: 250mm; height: 176mm; max-height: 176mm;}
 .paper>.page.c5 { width: 162mm; max-width: 162mm; height: 229mm; max-height: 229mm;}
+.paper>.page.c5.landscape { width: 229mm; max-width: 229mm; height: 162mm; max-height: 162mm;}
 .paper>.page.letter, .paper>.page.ansi-a { width: 8.5in; max-width: 216mm; height: 11in; max-height: 279mm;}
-.paper>.page.gov-letter {width: 8in; max-width: 203mm; height: 10in; max-height: 254mm;}
-.paper>.page.half-letter, .paper>.page.statement, .paper>.page.memo { width: 5.5in; max-width: 140mm; height: 8.5in; max-height: 216mm;}
+.paper>.page.letter.landscape, .paper>.page.ansi-a.landscape { width: 11in; max-width: 279mm; height: 8.5in; max-height: 216mm;}
+.paper>.page.half-letter, .paper>.page.statement, .paper>.page.memo {
+	width: 5.5in; max-width: 140mm; height: 8.5in; max-height: 216mm;
+}
+.paper>.page.half-letter.landscape, .paper>.page.statement.landscape, .paper>.page.memo.landscape {
+	width: 8.5in; max-width: 216mm; height: 5.5in; max-height: 140mm;
+}
 .paper>.page.legal {width: 8.5in; max-width: 216mm; height: 14in; max-height: 356mm;}
+.paper>.page.legal.landscape {width: 14in; max-width: 356mm; height: 8.5in; max-height: 216mm;}
 .paper>.page.gov-legal {width: 8.5in; max-width: 216mm; height: 13in; max-height: 330mm;}
+.paper>.page.gov-legal.landscape {width: 13in; max-width: 330mm; height: 8.5in; max-height: 216mm;}
+.paper>.page.gov-letter {width: 8in; max-width: 203mm; height: 10.5in; max-height: 267mm;}
+.paper>.page.gov-letter.landscape {width: 10.5in; max-width: 267mm; height: 8in; max-height: 203mm;}
 .paper>.page.tabloid, .paper>.page.ansi-b {width: 11in; max-width: 279mm; height: 17in; max-height: 432mm;}
 .paper>.page.ledger, .paper>.page.ansi-b.landscape { width: 17in; max-width: 432mm; height: 11in; max-height: 279mm;}
 .paper>.page.jr-legal {width: 5in; max-width: 127mm; height: 8in; max-height: 203mm;}
+.paper>.page.jr-legal.landscape {width: 8in; max-width: 203mm; height: 5in; max-height: 127mm;}
 .paper>.page.ansi-c {width: 17in; max-width: 432mm; height: 22in; max-height:559mm;}
+.paper>.page.ansi-c.landscape {width: 22in; max-width: 559mm; height: 17in; max-height:432mm;}
 .paper>.page.ansi-d {width: 22in; max-width: 559mm; height: 34in; max-height: 864mm;}
+.paper>.page.ansi-d.landscape {width: 34in; max-width: 864mm; height: 22in; max-height: 559mm;}
 .paper>.page.ansi-e {width: 34in; max-width: 864mm; height: 44in; max-height: 1118mm;}
+.paper>.page.ansi-e.landscape {width: 44in; max-width: 1118mm; height: 34in; max-height: 864mm;}
 .paper>.page.arch-a {width: 9in; max-width: 229mm; height: 12in; max-height: 305mm;}
+.paper>.page.arch-a.landscape {width: 12in; max-width: 305mm; height: 9in; max-height: 229mm;}
 .paper>.page.arch-b {width: 12in; max-width: 305mm; height: 18in; max-height: 457mm;}
+.paper>.page.arch-b.landscape {width: 18in; max-width: 457mm; height: 12in; max-height: 305mm;}
 .paper>.page.arch-c {width: 18in; max-width: 457mm; height: 24in; max-height: 610mm;}
+.paper>.page.arch-c.landscape {width: 24in; max-width: 610mm; height: 18in; max-height: 457mm;}
 .paper>.page.arch-d {width: 24in; max-width: 610mm; height: 36in; max-height: 914mm;}
+.paper>.page.arch-d.landscape {width: 36in; max-width: 914mm; height: 24in; max-height: 610mm;}
 .paper>.page.arch-e {width: 36in; max-width: 914mm; height: 48in; max-height: 1219mm;}
+.paper>.page.arch-e.landscape {width: 48in; max-width: 1219mm; height: 36in; max-height: 914mm;}
 .paper>.page.arch-e1 {width: 30in; max-width: 762mm; height: 42in; max-height: 1067mm;}
+.paper>.page.arch-e1.landscape {width: 42in; max-width: 1067mm; height: 30in; max-height: 762mm;}
